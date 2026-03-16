@@ -1,65 +1,155 @@
-import Image from "next/image";
+import type { Metadata } from "next";
+import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "CashCalcs - Free Financial Calculators | Savings, Debt, FIRE, Side Hustles",
+  description:
+    "Free financial calculators: savings goal planner, debt payoff calculator (avalanche vs snowball), FIRE/early retirement calculator, and side hustle earnings estimator. No sign-up required.",
+  keywords: [
+    "financial calculator",
+    "savings calculator",
+    "debt payoff calculator",
+    "FIRE calculator",
+    "side hustle calculator",
+    "free finance tools",
+    "compound interest calculator",
+    "early retirement calculator",
+  ],
+};
+
+const calculators = [
+  {
+    href: "/side-hustle",
+    title: "Side Hustle Calculator",
+    desc: "Find the best side hustle for your skills. 30+ hustles with earnings estimates.",
+    color: "from-emerald-500 to-emerald-600",
+    stats: "30+ hustles",
+  },
+  {
+    href: "/debt-payoff",
+    title: "Debt Payoff Calculator",
+    desc: "Compare avalanche vs snowball methods. See your debt-free date and interest savings.",
+    color: "from-blue-500 to-blue-600",
+    stats: "8 debt types",
+  },
+  {
+    href: "/fire-calculator",
+    title: "FIRE Calculator",
+    desc: "Find your financial independence date. Lean, Coast, Fat, and Barista FIRE variants.",
+    color: "from-indigo-500 to-indigo-600",
+    stats: "8 scenarios",
+  },
+  {
+    href: "/savings-goal",
+    title: "Savings Goal Calculator",
+    desc: "Plan any savings goal with compound interest. Track progress and get tips.",
+    color: "from-purple-500 to-purple-600",
+    stats: "8 goal types",
+  },
+];
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      <div className="max-w-5xl mx-auto px-4 pt-16 pb-12 text-center">
+        <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 mb-4">
+          Free Financial{" "}
+          <span className="bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
+            Calculators
+          </span>
+        </h1>
+        <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-2">
+          Plan your finances with our free, no-signup-required tools. Save more,
+          pay off debt faster, and reach financial independence.
+        </p>
+        <p className="text-sm text-gray-400">
+          All calculations run in your browser. Your data never leaves your device.
+        </p>
+      </div>
+
+      <div className="max-w-5xl mx-auto px-4 pb-16">
+        <div className="grid md:grid-cols-2 gap-6">
+          {calculators.map((calc) => (
+            <Link key={calc.href} href={calc.href} className="group block">
+              <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all p-6 h-full border border-gray-100 group-hover:border-gray-200">
+                <div
+                  className={`inline-block bg-gradient-to-r ${calc.color} text-white text-xs font-bold px-3 py-1 rounded-full mb-4`}
+                >
+                  {calc.stats}
+                </div>
+                <h2 className="text-2xl font-bold text-gray-900 mb-2 group-hover:text-emerald-600 transition-colors">
+                  {calc.title}
+                </h2>
+                <p className="text-gray-600">{calc.desc}</p>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+
+      <section className="max-w-5xl mx-auto px-4 pb-16">
+        <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+          Why CashCalcs?
+        </h2>
+        <div className="grid md:grid-cols-3 gap-6">
+          <div className="text-center">
+            <div className="text-3xl font-bold text-emerald-600 mb-2">100%</div>
+            <h3 className="font-bold text-gray-900 mb-1">Free Forever</h3>
+            <p className="text-gray-600 text-sm">
+              No subscriptions, no premium tiers, no hidden fees. Every calculator is completely free.
+            </p>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl font-bold text-blue-600 mb-2">85+</div>
+            <h3 className="font-bold text-gray-900 mb-1">Pages of Tools</h3>
+            <p className="text-gray-600 text-sm">
+              Specialized pages for every debt type, savings goal, FIRE strategy, and side hustle.
+            </p>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl font-bold text-indigo-600 mb-2">0</div>
+            <h3 className="font-bold text-gray-900 mb-1">Data Collected</h3>
+            <p className="text-gray-600 text-sm">
+              All calculations happen in your browser. We never see or store your financial data.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="max-w-4xl mx-auto px-4 pb-16">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">
+          Your Complete Financial Toolkit for 2026
+        </h2>
+        <div className="text-gray-700 leading-relaxed space-y-4">
+          <p>
+            CashCalcs brings together the financial calculators you actually need
+            in one place. Whether you are figuring out how to pay off credit card
+            debt, planning for early retirement, saving for a house, or looking
+            for ways to earn extra income, we have a tool for you.
+          </p>
+          <p>
+            Each calculator is built with real-world data and actionable advice.
+            Our side hustle calculator includes 30+ opportunities with real
+            hourly rates. Our debt payoff calculator compares avalanche and
+            snowball strategies with exact interest savings. Our FIRE calculator
+            shows your path to financial independence with multiple strategies.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "CashCalcs",
+            description:
+              "Free financial calculators: savings goals, debt payoff, FIRE calculator, and side hustle earnings.",
+            url: "https://cashcalcs.com",
+          }),
+        }}
+      />
+    </main>
   );
 }
