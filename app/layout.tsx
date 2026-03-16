@@ -69,6 +69,9 @@ gtag('config', 'G-P0H2GLZMKS');`}
               <Link href="/compound-interest" className="hover:text-teal-600 transition-colors">
                 Compound
               </Link>
+              <Link href="/net-worth" className="hover:text-orange-600 transition-colors">
+                Net Worth
+              </Link>
             </div>
           </div>
         </nav>
@@ -78,7 +81,7 @@ gtag('config', 'G-P0H2GLZMKS');`}
         {/* Footer */}
         <footer className="bg-gray-50 border-t border-gray-100 py-8 mt-12">
           <div className="max-w-5xl mx-auto px-4">
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-6 mb-6">
+            <div className="grid grid-cols-2 md:grid-cols-6 gap-6 mb-6">
               <div>
                 <h3 className="font-bold text-gray-900 mb-2 text-sm">Side Hustles</h3>
                 <ul className="space-y-1 text-xs text-gray-500">
@@ -117,6 +120,14 @@ gtag('config', 'G-P0H2GLZMKS');`}
                   <li><Link href="/compound-interest" className="hover:text-gray-700">Calculator</Link></li>
                   <li><Link href="/compound-interest/millionaire-calculator" className="hover:text-gray-700">Millionaire</Link></li>
                   <li><Link href="/compound-interest/rule-of-72" className="hover:text-gray-700">Rule of 72</Link></li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-bold text-gray-900 mb-2 text-sm">Net Worth</h3>
+                <ul className="space-y-1 text-xs text-gray-500">
+                  <li><Link href="/net-worth" className="hover:text-gray-700">Calculator</Link></li>
+                  <li><Link href="/net-worth/net-worth-by-age-30" className="hover:text-gray-700">By Age 30</Link></li>
+                  <li><Link href="/net-worth/millennial-net-worth" className="hover:text-gray-700">Millennial</Link></li>
                 </ul>
               </div>
             </div>

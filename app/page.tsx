@@ -53,6 +53,13 @@ const calculators = [
     color: "from-teal-500 to-teal-600",
     stats: "8 scenarios",
   },
+  {
+    href: "/net-worth",
+    title: "Net Worth Calculator",
+    desc: "Add your assets and debts to see your total net worth, financial health score, and breakdown.",
+    color: "from-orange-500 to-orange-600",
+    stats: "8 scenarios",
+  },
 ];
 
 export default function Home() {
@@ -107,7 +114,7 @@ export default function Home() {
             </p>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-blue-600 mb-2">80+</div>
+            <div className="text-3xl font-bold text-blue-600 mb-2">90+</div>
             <h3 className="font-bold text-gray-900 mb-1">Pages of Tools</h3>
             <p className="text-gray-600 text-sm">
               Specialized pages for every debt type, savings goal, FIRE strategy, and side hustle.
