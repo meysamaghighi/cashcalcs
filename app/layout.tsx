@@ -66,6 +66,9 @@ gtag('config', 'G-P0H2GLZMKS');`}
               <Link href="/savings-goal" className="hover:text-purple-600 transition-colors">
                 Savings
               </Link>
+              <Link href="/compound-interest" className="hover:text-teal-600 transition-colors">
+                Compound
+              </Link>
             </div>
           </div>
         </nav>
@@ -75,7 +78,7 @@ gtag('config', 'G-P0H2GLZMKS');`}
         {/* Footer */}
         <footer className="bg-gray-50 border-t border-gray-100 py-8 mt-12">
           <div className="max-w-5xl mx-auto px-4">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-6 mb-6">
               <div>
                 <h3 className="font-bold text-gray-900 mb-2 text-sm">Side Hustles</h3>
                 <ul className="space-y-1 text-xs text-gray-500">
@@ -106,6 +109,14 @@ gtag('config', 'G-P0H2GLZMKS');`}
                   <li><Link href="/savings-goal" className="hover:text-gray-700">Calculator</Link></li>
                   <li><Link href="/savings-goal/emergency-fund" className="hover:text-gray-700">Emergency Fund</Link></li>
                   <li><Link href="/savings-goal/house-down-payment" className="hover:text-gray-700">Down Payment</Link></li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-bold text-gray-900 mb-2 text-sm">Compound Interest</h3>
+                <ul className="space-y-1 text-xs text-gray-500">
+                  <li><Link href="/compound-interest" className="hover:text-gray-700">Calculator</Link></li>
+                  <li><Link href="/compound-interest/millionaire-calculator" className="hover:text-gray-700">Millionaire</Link></li>
+                  <li><Link href="/compound-interest/rule-of-72" className="hover:text-gray-700">Rule of 72</Link></li>
                 </ul>
               </div>
             </div>

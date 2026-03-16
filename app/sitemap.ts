@@ -3,6 +3,7 @@ import { sideHustles, getAllCategories } from "./lib/side-hustles";
 import { debtTypes } from "./lib/debt-engine";
 import { fireScenarios } from "./lib/fire-engine";
 import { savingsGoals } from "./lib/savings-engine";
+import { compoundScenarios } from "./lib/compound-engine";
 
 const BASE = "https://cashcalcs.com";
 
@@ -15,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/debt-payoff`, lastModified: now, priority: 0.9 },
     { url: `${BASE}/fire-calculator`, lastModified: now, priority: 0.9 },
     { url: `${BASE}/savings-goal`, lastModified: now, priority: 0.9 },
+    { url: `${BASE}/compound-interest`, lastModified: now, priority: 0.9 },
   ];
 
   const sideHustlePages = sideHustles.map((h) => ({
@@ -47,6 +49,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  const compoundPages = compoundScenarios.map((s) => ({
+    url: `${BASE}/compound-interest/${s.slug}`,
+    lastModified: now,
+    priority: 0.7,
+  }));
+
   return [
     ...staticPages,
     ...sideHustlePages,
@@ -54,5 +62,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...debtPages,
     ...firePages,
     ...savingsPages,
+    ...compoundPages,
   ];
 }

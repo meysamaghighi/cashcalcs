@@ -46,6 +46,13 @@ const calculators = [
     color: "from-purple-500 to-purple-600",
     stats: "8 goal types",
   },
+  {
+    href: "/compound-interest",
+    title: "Compound Interest Calculator",
+    desc: "Visualize how your investments grow over time. Compare scenarios and compounding frequencies.",
+    color: "from-teal-500 to-teal-600",
+    stats: "8 scenarios",
+  },
 ];
 
 export default function Home() {
@@ -100,7 +107,7 @@ export default function Home() {
             </p>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-blue-600 mb-2">85+</div>
+            <div className="text-3xl font-bold text-blue-600 mb-2">80+</div>
             <h3 className="font-bold text-gray-900 mb-1">Pages of Tools</h3>
             <p className="text-gray-600 text-sm">
               Specialized pages for every debt type, savings goal, FIRE strategy, and side hustle.
