@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import Script from "next/script";
+import MobileNav from "./components/MobileNav";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -20,6 +21,15 @@ export const metadata: Metadata = {
   description:
     "Free financial calculators: savings goals, debt payoff, FIRE calculator, and side hustle earnings.",
 };
+
+const navLinks = [
+  { href: "/side-hustle", label: "Side Hustle", color: "hover:text-emerald-600" },
+  { href: "/debt-payoff", label: "Debt Payoff", color: "hover:text-blue-600" },
+  { href: "/fire-calculator", label: "FIRE", color: "hover:text-indigo-600" },
+  { href: "/savings-goal", label: "Savings", color: "hover:text-purple-600" },
+  { href: "/compound-interest", label: "Compound", color: "hover:text-teal-600" },
+  { href: "/net-worth", label: "Net Worth", color: "hover:text-orange-600" },
+];
 
 export default function RootLayout({
   children,
@@ -53,26 +63,20 @@ gtag('config', 'G-P0H2GLZMKS');`}
             <Link href="/" className="font-extrabold text-lg text-gray-900">
               CashCalcs
             </Link>
-            <div className="flex gap-4 text-sm font-medium text-gray-600">
-              <Link href="/side-hustle" className="hover:text-emerald-600 transition-colors">
-                Side Hustle
-              </Link>
-              <Link href="/debt-payoff" className="hover:text-blue-600 transition-colors">
-                Debt Payoff
-              </Link>
-              <Link href="/fire-calculator" className="hover:text-indigo-600 transition-colors">
-                FIRE
-              </Link>
-              <Link href="/savings-goal" className="hover:text-purple-600 transition-colors">
-                Savings
-              </Link>
-              <Link href="/compound-interest" className="hover:text-teal-600 transition-colors">
-                Compound
-              </Link>
-              <Link href="/net-worth" className="hover:text-orange-600 transition-colors">
-                Net Worth
-              </Link>
+            {/* Desktop nav */}
+            <div className="hidden md:flex gap-4 text-sm font-medium text-gray-600">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`${link.color} transition-colors`}
+                >
+                  {link.label}
+                </Link>
+              ))}
             </div>
+            {/* Mobile nav */}
+            <MobileNav links={navLinks} />
           </div>
         </nav>
 
@@ -137,10 +141,10 @@ gtag('config', 'G-P0H2GLZMKS');`}
           </div>
         </footer>
 
-        <Script
+        <script
+          async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2621005924235240"
           crossOrigin="anonymous"
-          strategy="afterInteractive"
         />
       </body>
     </html>
