@@ -17,6 +17,7 @@ export default function FireCalculator({ defaults }: Props) {
     age: defaults?.age ?? 30,
     annualIncome: defaults?.annualIncome ?? 75000,
     annualExpenses: defaults?.annualExpenses ?? 45000,
+    taxRate: defaults?.taxRate ?? 25,
     currentSavings: defaults?.currentSavings ?? 20000,
     annualReturn: defaults?.annualReturn ?? 7,
     withdrawalRate: defaults?.withdrawalRate ?? 4,
@@ -30,7 +31,8 @@ export default function FireCalculator({ defaults }: Props) {
   }
 
   const result = useMemo(() => calculateFire(inputs), [inputs]);
-  const annualSavings = inputs.annualIncome - inputs.annualExpenses;
+  const afterTaxIncome = inputs.annualIncome * (1 - inputs.taxRate / 100);
+  const annualSavings = afterTaxIncome - inputs.annualExpenses;
 
   return (
     <div>
@@ -73,6 +75,25 @@ export default function FireCalculator({ defaults }: Props) {
               onChange={(e) => update("annualExpenses", Number(e.target.value))}
               className="w-full px-4 py-2 border border-gray-200 rounded-lg text-gray-900 focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
             />
+          </div>
+          <div>
+            <label className="block text-sm font-semibold text-gray-700 mb-2">
+              Effective Tax Rate: {inputs.taxRate}%
+            </label>
+            <input
+              type="range"
+              min={0}
+              max={50}
+              step={1}
+              value={inputs.taxRate}
+              onChange={(e) => update("taxRate", Number(e.target.value))}
+              className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-indigo-600"
+            />
+            <div className="flex justify-between text-xs text-gray-400 mt-1">
+              <span>0%</span>
+              <span>25%</span>
+              <span>50%</span>
+            </div>
           </div>
           <div>
             <label className="block text-sm font-semibold text-gray-700 mb-2">
@@ -130,8 +151,9 @@ export default function FireCalculator({ defaults }: Props) {
         </div>
 
         <div className="mt-4 bg-gray-50 rounded-lg p-3 text-sm text-gray-600">
-          Savings rate: <strong>{result.savingsRate}%</strong> | Annual savings:{" "}
-          <strong>{formatCurrencyFull(Math.max(0, annualSavings))}</strong>
+          After-tax income: <strong>{formatCurrencyFull(Math.round(afterTaxIncome))}</strong>{" "}
+          | Savings rate: <strong>{result.savingsRate}%</strong>{" "}
+          | Annual savings: <strong>{formatCurrencyFull(Math.max(0, Math.round(annualSavings)))}</strong>
         </div>
 
         <button
