@@ -25,6 +25,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/mortgage-calculator`, lastModified: now, priority: 0.9 },
     { url: `${BASE}/guides/how-to-calculate-net-worth`, lastModified: now, priority: 0.6 },
     { url: `${BASE}/guides/debt-avalanche-vs-snowball`, lastModified: now, priority: 0.6 },
+    { url: `${BASE}/guides/how-much-house-can-i-afford`, lastModified: now, priority: 0.6 },
+    { url: `${BASE}/guides/what-is-the-fire-movement`, lastModified: now, priority: 0.6 },
   ];
 
   const sideHustlePages = sideHustles.map((h) => ({
