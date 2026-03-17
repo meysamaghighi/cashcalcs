@@ -80,6 +80,22 @@ export default async function ScenarioPage({
           </Link>
         </div>
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            name: scenario.name,
+            description: scenario.seoDescription,
+            url: `https://cashcalcs.com/compound-interest/${scenario.slug}`,
+            applicationCategory: "FinanceApplication",
+            operatingSystem: "Any",
+            offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+          }),
+        }}
+      />
     </main>
   );
 }

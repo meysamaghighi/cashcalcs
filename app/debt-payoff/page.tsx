@@ -92,6 +92,26 @@ export default function DebtPayoffPage() {
         </div>
       </section>
 
+      <section className="max-w-4xl mx-auto px-4 pb-12">
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">
+          Frequently Asked Questions
+        </h2>
+        <div className="space-y-4">
+          <div className="bg-white rounded-xl shadow-sm p-6">
+            <h3 className="font-bold text-gray-900 mb-2">What is the avalanche method?</h3>
+            <p className="text-gray-700 text-sm">The avalanche method means paying minimums on all debts and putting extra money toward the debt with the highest interest rate. Once that debt is paid off, you move to the next highest rate. This method saves the most money on interest over time.</p>
+          </div>
+          <div className="bg-white rounded-xl shadow-sm p-6">
+            <h3 className="font-bold text-gray-900 mb-2">What is the snowball method?</h3>
+            <p className="text-gray-700 text-sm">The snowball method means paying minimums on all debts and putting extra money toward the smallest balance first. Once paid off, you roll that payment into the next smallest debt. This method provides quick wins that keep you motivated.</p>
+          </div>
+          <div className="bg-white rounded-xl shadow-sm p-6">
+            <h3 className="font-bold text-gray-900 mb-2">How much extra should I pay toward debt each month?</h3>
+            <p className="text-gray-700 text-sm">Any extra amount helps. Even $50 extra per month can save thousands in interest and shave years off your payoff timeline. The more you can pay above minimums, the faster you become debt-free. Use the calculator above to see the exact impact.</p>
+          </div>
+        </div>
+      </section>
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -104,6 +124,32 @@ export default function DebtPayoffPage() {
             applicationCategory: "FinanceApplication",
             operatingSystem: "Any",
             offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "What is the avalanche method?",
+                acceptedAnswer: { "@type": "Answer", text: "The avalanche method means paying minimums on all debts and putting extra money toward the debt with the highest interest rate. Once that debt is paid off, you move to the next highest rate. This method saves the most money on interest over time." },
+              },
+              {
+                "@type": "Question",
+                name: "What is the snowball method?",
+                acceptedAnswer: { "@type": "Answer", text: "The snowball method means paying minimums on all debts and putting extra money toward the smallest balance first. Once paid off, you roll that payment into the next smallest debt. This method provides quick wins that keep you motivated." },
+              },
+              {
+                "@type": "Question",
+                name: "How much extra should I pay toward debt each month?",
+                acceptedAnswer: { "@type": "Answer", text: "Any extra amount helps. Even $50 extra per month can save thousands in interest and shave years off your payoff timeline." },
+              },
+            ],
           }),
         }}
       />

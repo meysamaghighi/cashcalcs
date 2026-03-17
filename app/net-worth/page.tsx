@@ -134,6 +134,26 @@ export default function NetWorthPage() {
         </div>
       </section>
 
+      <section className="max-w-4xl mx-auto px-4 pb-12">
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">
+          Frequently Asked Questions
+        </h2>
+        <div className="space-y-4">
+          <div className="bg-white rounded-xl shadow-sm p-6">
+            <h3 className="font-bold text-gray-900 mb-2">What is net worth?</h3>
+            <p className="text-gray-700 text-sm">Net worth is everything you own (assets) minus everything you owe (liabilities). It is the single best number to track your financial health. A positive net worth means you own more than you owe. A growing net worth means you are building wealth over time.</p>
+          </div>
+          <div className="bg-white rounded-xl shadow-sm p-6">
+            <h3 className="font-bold text-gray-900 mb-2">What should my net worth be at my age?</h3>
+            <p className="text-gray-700 text-sm">A common rule of thumb: your net worth should equal your age times your annual pre-tax income divided by 10. For a 30-year-old earning $60,000, that means a target of $180,000. The median net worth at 30 is about $10,000, and at 40 about $80,000. Focus on growth over time rather than hitting exact benchmarks.</p>
+          </div>
+          <div className="bg-white rounded-xl shadow-sm p-6">
+            <h3 className="font-bold text-gray-900 mb-2">Is negative net worth normal?</h3>
+            <p className="text-gray-700 text-sm">Yes, about 15% of American households have negative net worth. It is common for people in their 20s and 30s due to student loans. The important thing is having a plan to move toward positive net worth by paying down high-interest debt and building savings.</p>
+          </div>
+        </div>
+      </section>
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -147,6 +167,32 @@ export default function NetWorthPage() {
             applicationCategory: "FinanceApplication",
             operatingSystem: "Any",
             offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "What is net worth?",
+                acceptedAnswer: { "@type": "Answer", text: "Net worth is everything you own (assets) minus everything you owe (liabilities). It is the single best number to track your financial health." },
+              },
+              {
+                "@type": "Question",
+                name: "What should my net worth be at my age?",
+                acceptedAnswer: { "@type": "Answer", text: "A common rule of thumb: your net worth should equal your age times your annual pre-tax income divided by 10. The median net worth at 30 is about $10,000, and at 40 about $80,000." },
+              },
+              {
+                "@type": "Question",
+                name: "Is negative net worth normal?",
+                acceptedAnswer: { "@type": "Answer", text: "Yes, about 15% of American households have negative net worth. It is common for people in their 20s and 30s due to student loans. The important thing is having a plan to move toward positive net worth." },
+              },
+            ],
           }),
         }}
       />

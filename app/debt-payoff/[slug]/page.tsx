@@ -88,6 +88,22 @@ export default async function DebtTypePage({
           </Link>
         </div>
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            name: `${dt.name} Payoff Calculator`,
+            description: dt.seoDescription,
+            url: `https://cashcalcs.com/debt-payoff/${dt.slug}`,
+            applicationCategory: "FinanceApplication",
+            operatingSystem: "Any",
+            offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+          }),
+        }}
+      />
     </main>
   );
 }

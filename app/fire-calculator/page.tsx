@@ -83,6 +83,26 @@ export default function FirePage() {
         </div>
       </section>
 
+      <section className="max-w-4xl mx-auto px-4 pb-12">
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">
+          Frequently Asked Questions
+        </h2>
+        <div className="space-y-4">
+          <div className="bg-white rounded-xl shadow-sm p-6">
+            <h3 className="font-bold text-gray-900 mb-2">What is FIRE (Financial Independence, Retire Early)?</h3>
+            <p className="text-gray-700 text-sm">FIRE is a movement focused on aggressive saving and investing to achieve financial independence decades earlier than traditional retirement. The goal is to accumulate enough investments that passive income covers your living expenses, typically using the 4% rule (you can safely withdraw 4% of your portfolio annually).</p>
+          </div>
+          <div className="bg-white rounded-xl shadow-sm p-6">
+            <h3 className="font-bold text-gray-900 mb-2">How much money do I need to retire early?</h3>
+            <p className="text-gray-700 text-sm">A common rule of thumb is 25 times your annual expenses. If you spend $40,000 per year, you need $1,000,000 invested. This is based on the 4% safe withdrawal rate from the Trinity Study. Use our calculator above to find your exact FIRE number.</p>
+          </div>
+          <div className="bg-white rounded-xl shadow-sm p-6">
+            <h3 className="font-bold text-gray-900 mb-2">What is the difference between Lean FIRE and Fat FIRE?</h3>
+            <p className="text-gray-700 text-sm">Lean FIRE means retiring on a minimal budget (under $40,000/year), requiring a smaller portfolio but a frugal lifestyle. Fat FIRE means retiring with a comfortable or luxurious budget ($100,000+/year), requiring a much larger portfolio. Coast FIRE means you have enough invested that compound growth alone will fund retirement by a traditional age.</p>
+          </div>
+        </div>
+      </section>
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -95,6 +115,32 @@ export default function FirePage() {
             applicationCategory: "FinanceApplication",
             operatingSystem: "Any",
             offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "What is FIRE (Financial Independence, Retire Early)?",
+                acceptedAnswer: { "@type": "Answer", text: "FIRE is a movement focused on aggressive saving and investing to achieve financial independence decades earlier than traditional retirement. The goal is to accumulate enough investments that passive income covers your living expenses, typically using the 4% rule." },
+              },
+              {
+                "@type": "Question",
+                name: "How much money do I need to retire early?",
+                acceptedAnswer: { "@type": "Answer", text: "A common rule of thumb is 25 times your annual expenses. If you spend $40,000 per year, you need $1,000,000 invested. This is based on the 4% safe withdrawal rate from the Trinity Study." },
+              },
+              {
+                "@type": "Question",
+                name: "What is the difference between Lean FIRE and Fat FIRE?",
+                acceptedAnswer: { "@type": "Answer", text: "Lean FIRE means retiring on a minimal budget (under $40,000/year). Fat FIRE means retiring with a comfortable budget ($100,000+/year). Coast FIRE means you have enough invested that compound growth alone will fund retirement by a traditional age." },
+              },
+            ],
           }),
         }}
       />

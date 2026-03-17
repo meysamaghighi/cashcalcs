@@ -129,6 +129,26 @@ export default function SideHustlePage() {
         </div>
       </section>
 
+      <section className="max-w-4xl mx-auto px-4 pb-12">
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">
+          Frequently Asked Questions
+        </h2>
+        <div className="space-y-4">
+          <div className="bg-white rounded-xl shadow-sm p-6">
+            <h3 className="font-bold text-gray-900 mb-2">What is the highest paying side hustle?</h3>
+            <p className="text-gray-700 text-sm">Web development and software engineering consulting are among the highest paying side hustles, earning $50-$150+ per hour. Other high-paying options include data science consulting, UX design, and financial consulting. The best side hustle for you depends on your skills and available time.</p>
+          </div>
+          <div className="bg-white rounded-xl shadow-sm p-6">
+            <h3 className="font-bold text-gray-900 mb-2">How much can I realistically earn from a side hustle?</h3>
+            <p className="text-gray-700 text-sm">Most side hustlers earn $500-$2,000 per month working 10-15 hours per week. Earnings vary widely based on the hustle type, your skill level, and time invested. Use our calculator above to get a personalized estimate based on your situation.</p>
+          </div>
+          <div className="bg-white rounded-xl shadow-sm p-6">
+            <h3 className="font-bold text-gray-900 mb-2">Do I need to pay taxes on side hustle income?</h3>
+            <p className="text-gray-700 text-sm">Yes. In the US, you must report side hustle income if you earn $400 or more in a year. You may need to pay self-employment tax (15.3%) in addition to income tax. Keep records of all income and expenses, and consider making quarterly estimated tax payments.</p>
+          </div>
+        </div>
+      </section>
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -141,6 +161,32 @@ export default function SideHustlePage() {
             applicationCategory: "FinanceApplication",
             operatingSystem: "Any",
             offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "What is the highest paying side hustle?",
+                acceptedAnswer: { "@type": "Answer", text: "Web development and software engineering consulting are among the highest paying side hustles, earning $50-$150+ per hour. Other high-paying options include data science consulting, UX design, and financial consulting." },
+              },
+              {
+                "@type": "Question",
+                name: "How much can I realistically earn from a side hustle?",
+                acceptedAnswer: { "@type": "Answer", text: "Most side hustlers earn $500-$2,000 per month working 10-15 hours per week. Earnings vary widely based on the hustle type, your skill level, and time invested." },
+              },
+              {
+                "@type": "Question",
+                name: "Do I need to pay taxes on side hustle income?",
+                acceptedAnswer: { "@type": "Answer", text: "Yes. In the US, you must report side hustle income if you earn $400 or more in a year. You may need to pay self-employment tax (15.3%) in addition to income tax." },
+              },
+            ],
           }),
         }}
       />

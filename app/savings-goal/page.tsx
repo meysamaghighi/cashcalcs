@@ -86,6 +86,26 @@ export default function SavingsGoalPage() {
         </div>
       </section>
 
+      <section className="max-w-4xl mx-auto px-4 pb-12">
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">
+          Frequently Asked Questions
+        </h2>
+        <div className="space-y-4">
+          <div className="bg-white rounded-xl shadow-sm p-6">
+            <h3 className="font-bold text-gray-900 mb-2">How much should I save each month?</h3>
+            <p className="text-gray-700 text-sm">Financial experts recommend saving at least 20% of your income (the 50/30/20 rule). However, the right amount depends on your goals and timeline. Use the calculator above to find the exact monthly savings needed for your specific goal and deadline.</p>
+          </div>
+          <div className="bg-white rounded-xl shadow-sm p-6">
+            <h3 className="font-bold text-gray-900 mb-2">Where should I keep my savings?</h3>
+            <p className="text-gray-700 text-sm">For short-term goals (under 3 years), use a high-yield savings account (currently 4-5% APY). For goals 5+ years away, consider investing in index funds for higher long-term returns (historically 7-10% annually). For goals in between, a mix of both works well.</p>
+          </div>
+          <div className="bg-white rounded-xl shadow-sm p-6">
+            <h3 className="font-bold text-gray-900 mb-2">How big should my emergency fund be?</h3>
+            <p className="text-gray-700 text-sm">Most experts recommend 3-6 months of living expenses. If you have a stable job, 3 months is sufficient. If you are self-employed or have variable income, aim for 6 months. Keep it in a high-yield savings account for easy access.</p>
+          </div>
+        </div>
+      </section>
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -98,6 +118,32 @@ export default function SavingsGoalPage() {
             applicationCategory: "FinanceApplication",
             operatingSystem: "Any",
             offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "How much should I save each month?",
+                acceptedAnswer: { "@type": "Answer", text: "Financial experts recommend saving at least 20% of your income (the 50/30/20 rule). The right amount depends on your goals and timeline." },
+              },
+              {
+                "@type": "Question",
+                name: "Where should I keep my savings?",
+                acceptedAnswer: { "@type": "Answer", text: "For short-term goals (under 3 years), use a high-yield savings account (4-5% APY). For goals 5+ years away, consider index funds for higher returns (7-10% annually)." },
+              },
+              {
+                "@type": "Question",
+                name: "How big should my emergency fund be?",
+                acceptedAnswer: { "@type": "Answer", text: "Most experts recommend 3-6 months of living expenses. If you have a stable job, 3 months is sufficient. If self-employed, aim for 6 months. Keep it in a high-yield savings account." },
+              },
+            ],
           }),
         }}
       />

@@ -133,6 +133,26 @@ export default function CompoundInterestPage() {
         </div>
       </section>
 
+      <section className="max-w-4xl mx-auto px-4 pb-12">
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">
+          Frequently Asked Questions
+        </h2>
+        <div className="space-y-4">
+          <div className="bg-white rounded-xl shadow-sm p-6">
+            <h3 className="font-bold text-gray-900 mb-2">What is compound interest?</h3>
+            <p className="text-gray-700 text-sm">Compound interest is interest earned on both your original principal and on previously earned interest. Unlike simple interest (which only applies to the principal), compound interest makes your money grow exponentially over time. The longer you invest, the more powerful the compounding effect becomes.</p>
+          </div>
+          <div className="bg-white rounded-xl shadow-sm p-6">
+            <h3 className="font-bold text-gray-900 mb-2">What is the Rule of 72?</h3>
+            <p className="text-gray-700 text-sm">The Rule of 72 is a quick way to estimate how long it takes to double your money. Divide 72 by your annual interest rate. At 8% returns, your money doubles in about 9 years (72 / 8 = 9). At 12%, it doubles in 6 years. This rule works best for rates between 6% and 10%.</p>
+          </div>
+          <div className="bg-white rounded-xl shadow-sm p-6">
+            <h3 className="font-bold text-gray-900 mb-2">Does compounding frequency matter?</h3>
+            <p className="text-gray-700 text-sm">More frequent compounding (daily vs annually) earns slightly more interest, but the difference is small. For example, $10,000 at 5% for 10 years earns $6,289 compounded annually vs $6,487 compounded daily, a difference of only $198. Your contribution amount and time horizon matter far more.</p>
+          </div>
+        </div>
+      </section>
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -145,6 +165,32 @@ export default function CompoundInterestPage() {
             applicationCategory: "FinanceApplication",
             operatingSystem: "Any",
             offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "What is compound interest?",
+                acceptedAnswer: { "@type": "Answer", text: "Compound interest is interest earned on both your original principal and on previously earned interest. Unlike simple interest, compound interest makes your money grow exponentially over time." },
+              },
+              {
+                "@type": "Question",
+                name: "What is the Rule of 72?",
+                acceptedAnswer: { "@type": "Answer", text: "The Rule of 72 is a quick way to estimate how long it takes to double your money. Divide 72 by your annual interest rate. At 8% returns, your money doubles in about 9 years." },
+              },
+              {
+                "@type": "Question",
+                name: "Does compounding frequency matter?",
+                acceptedAnswer: { "@type": "Answer", text: "More frequent compounding earns slightly more interest, but the difference is small. Your contribution amount and time horizon matter far more than compounding frequency." },
+              },
+            ],
           }),
         }}
       />

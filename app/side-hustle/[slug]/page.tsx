@@ -156,6 +156,22 @@ export default async function HustlePage({
           </Link>
         </div>
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            name: `${hustle.name} Side Hustle Calculator`,
+            description: `${hustle.name}: earn $${hustle.hourlyLow}-$${hustle.hourlyHigh}/hr. ${hustle.shortDesc}`,
+            url: `https://cashcalcs.com/side-hustle/${hustle.slug}`,
+            applicationCategory: "FinanceApplication",
+            operatingSystem: "Any",
+            offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+          }),
+        }}
+      />
     </main>
   );
 }
