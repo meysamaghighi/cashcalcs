@@ -4,9 +4,9 @@ import DebtCalculator from "../components/DebtCalculator";
 import { debtTypes } from "../lib/debt-engine";
 
 export const metadata: Metadata = {
-  title: "Debt Payoff Calculator - Free Avalanche vs Snowball Comparison | CashCalcs",
+  title: "Debt Payoff Calculator - Avalanche vs Snowball | CashCalcs",
   description:
-    "Free debt payoff calculator. Enter your debts, compare avalanche and snowball methods, and see your debt-free date. Find out how extra payments save you thousands in interest.",
+    "Free debt payoff calculator. Compare avalanche and snowball methods, see your debt-free date and interest savings.",
   keywords: [
     "debt payoff calculator",
     "debt free calculator",

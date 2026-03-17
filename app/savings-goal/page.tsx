@@ -4,9 +4,9 @@ import SavingsCalculator from "../components/SavingsCalculator";
 import { savingsGoals } from "../lib/savings-engine";
 
 export const metadata: Metadata = {
-  title: "Savings Goal Calculator - How Long to Reach Your Goal? | CashCalcs",
+  title: "Savings Goal Calculator | CashCalcs",
   description:
-    "Free savings goal calculator with compound interest. See how long to save for an emergency fund, house, vacation, car, wedding, college, or retirement.",
+    "Free savings goal calculator with compound interest. Plan for emergency fund, house, vacation, car, wedding, or retirement.",
   keywords: [
     "savings goal calculator",
     "savings calculator",

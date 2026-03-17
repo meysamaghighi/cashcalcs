@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "CashCalcs - Free Financial Calculators | Savings, Debt, FIRE, Side Hustles",
+  title: "CashCalcs - Free Financial Calculators",
   description:
-    "Free financial calculators: savings goal planner, debt payoff calculator (avalanche vs snowball), FIRE/early retirement calculator, and side hustle earnings estimator. No sign-up required.",
+    "Free financial calculators: savings goals, debt payoff, FIRE, compound interest, net worth, and side hustles. No sign-up required.",
   keywords: [
     "financial calculator",
     "savings calculator",

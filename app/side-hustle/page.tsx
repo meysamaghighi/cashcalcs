@@ -4,9 +4,9 @@ import SideHustleCalculator from "../components/SideHustleCalculator";
 import { sideHustles, getAllCategories } from "../lib/side-hustles";
 
 export const metadata: Metadata = {
-  title: "Side Hustle Calculator - Find the Best Side Hustle for You in 2026 | CashCalcs",
+  title: "Side Hustle Calculator - Best Side Hustles 2026 | CashCalcs",
   description:
-    "Free side hustle calculator. Input your available hours and skills to get personalized side hustle recommendations with estimated monthly earnings. 30+ side hustles ranked.",
+    "Free side hustle calculator. Get personalized recommendations based on your hours and skills. 30+ side hustles with earnings.",
   keywords: [
     "side hustle",
     "side hustle calculator",
