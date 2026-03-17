@@ -35,6 +35,7 @@ const navLinks = [
   { href: "/savings-goal", label: "Savings", color: "hover:text-purple-600" },
   { href: "/compound-interest", label: "Compound", color: "hover:text-teal-600" },
   { href: "/net-worth", label: "Net Worth", color: "hover:text-orange-600" },
+  { href: "/subscription-tracker", label: "Subscriptions", color: "hover:text-rose-600" },
 ];
 
 export default function RootLayout({
@@ -91,7 +92,7 @@ gtag('config', 'G-P0H2GLZMKS');`}
         {/* Footer */}
         <footer className="bg-gray-50 border-t border-gray-100 py-8 mt-12">
           <div className="max-w-5xl mx-auto px-4">
-            <div className="grid grid-cols-2 md:grid-cols-6 gap-6 mb-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6 mb-6">
               <div>
                 <h3 className="font-bold text-gray-900 mb-2 text-sm">Side Hustles</h3>
                 <ul className="space-y-1 text-xs text-gray-500">
@@ -138,6 +139,14 @@ gtag('config', 'G-P0H2GLZMKS');`}
                   <li><Link href="/net-worth" className="hover:text-gray-700">Calculator</Link></li>
                   <li><Link href="/net-worth/net-worth-by-age-30" className="hover:text-gray-700">By Age 30</Link></li>
                   <li><Link href="/net-worth/millennial-net-worth" className="hover:text-gray-700">Millennial</Link></li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-bold text-gray-900 mb-2 text-sm">Subscriptions</h3>
+                <ul className="space-y-1 text-xs text-gray-500">
+                  <li><Link href="/subscription-tracker" className="hover:text-gray-700">Tracker</Link></li>
+                  <li><Link href="/subscription-tracker/average-american" className="hover:text-gray-700">Average American</Link></li>
+                  <li><Link href="/subscription-tracker/cord-cutter" className="hover:text-gray-700">Cord Cutter</Link></li>
                 </ul>
               </div>
             </div>

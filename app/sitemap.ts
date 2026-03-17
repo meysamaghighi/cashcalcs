@@ -5,6 +5,7 @@ import { fireScenarios } from "./lib/fire-engine";
 import { savingsGoals } from "./lib/savings-engine";
 import { compoundScenarios } from "./lib/compound-engine";
 import { networthScenarios } from "./lib/networth-engine";
+import { subscriptionPresets } from "./lib/subscription-engine";
 
 const BASE = "https://cashcalcs.com";
 
@@ -19,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/savings-goal`, lastModified: now, priority: 0.9 },
     { url: `${BASE}/compound-interest`, lastModified: now, priority: 0.9 },
     { url: `${BASE}/net-worth`, lastModified: now, priority: 0.9 },
+    { url: `${BASE}/subscription-tracker`, lastModified: now, priority: 0.9 },
     { url: `${BASE}/guides/how-to-calculate-net-worth`, lastModified: now, priority: 0.6 },
     { url: `${BASE}/guides/debt-avalanche-vs-snowball`, lastModified: now, priority: 0.6 },
   ];
@@ -74,5 +76,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...savingsPages,
     ...compoundPages,
     ...networthPages,
+    ...subscriptionPresets.map((p) => ({
+      url: `${BASE}/subscription-tracker/${p.slug}`,
+      lastModified: now,
+      priority: 0.7,
+    })),
   ];
 }
