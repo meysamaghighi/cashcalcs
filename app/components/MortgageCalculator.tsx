@@ -57,7 +57,7 @@ export default function MortgageCalculator({
                 value={homePrice || ""}
                 onChange={(e) => setHomePrice(+e.target.value)}
                 min={0}
-                className="input text-gray-900 w-full pl-7"
+                className="input text-gray-900 w-full !pl-7"
               />
             </div>
           </div>
@@ -74,7 +74,7 @@ export default function MortgageCalculator({
                 value={downPayment || ""}
                 onChange={(e) => setDownPayment(+e.target.value)}
                 min={0}
-                className="input text-gray-900 w-full pl-7"
+                className="input text-gray-900 w-full !pl-7"
               />
             </div>
           </div>
@@ -133,7 +133,7 @@ export default function MortgageCalculator({
                 value={propertyTax || ""}
                 onChange={(e) => setPropertyTax(+e.target.value)}
                 min={0}
-                className="input text-gray-900 w-full pl-7"
+                className="input text-gray-900 w-full !pl-7"
               />
             </div>
           </div>
@@ -150,7 +150,7 @@ export default function MortgageCalculator({
                 value={homeInsurance || ""}
                 onChange={(e) => setHomeInsurance(+e.target.value)}
                 min={0}
-                className="input text-gray-900 w-full pl-7"
+                className="input text-gray-900 w-full !pl-7"
               />
             </div>
           </div>
@@ -168,7 +168,7 @@ export default function MortgageCalculator({
                   value={pmi || ""}
                   onChange={(e) => setPmi(+e.target.value)}
                   min={0}
-                  className="input text-gray-900 w-full md:w-1/2 pl-7"
+                  className="input text-gray-900 w-full md:w-1/2 !pl-7"
                 />
               </div>
             </div>

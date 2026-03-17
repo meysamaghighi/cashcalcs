@@ -98,7 +98,7 @@ export default function SubscriptionCalculator({
                   min={0}
                   step={0.01}
                   placeholder="0.00"
-                  className="input text-gray-900 w-24 pl-7"
+                  className="input text-gray-900 w-24 !pl-7"
                 />
               </div>
               <select

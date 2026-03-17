@@ -156,7 +156,7 @@ export default function NetWorthCalculator({
                   }
                   min={0}
                   placeholder="0"
-                  className="input text-gray-900 w-32 pl-7"
+                  className="input text-gray-900 w-32 !pl-7"
                 />
               </div>
               <button
@@ -229,7 +229,7 @@ export default function NetWorthCalculator({
                   }
                   min={0}
                   placeholder="0"
-                  className="input text-gray-900 w-32 pl-7"
+                  className="input text-gray-900 w-32 !pl-7"
                 />
               </div>
               <button
