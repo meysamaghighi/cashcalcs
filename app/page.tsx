@@ -67,6 +67,13 @@ const calculators = [
     color: "from-rose-500 to-rose-600",
     stats: "8 scenarios",
   },
+  {
+    href: "/mortgage-calculator",
+    title: "Mortgage Calculator",
+    desc: "Calculate your monthly payment with principal, interest, taxes, insurance, and PMI. Full amortization schedule.",
+    color: "from-sky-500 to-sky-600",
+    stats: "8 scenarios",
+  },
 ];
 
 export default function Home() {
