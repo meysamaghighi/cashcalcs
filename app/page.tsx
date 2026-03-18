@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "CashCalcs - Free Financial Calculators",
   description:
-    "Free financial calculators: savings goals, debt payoff, FIRE, compound interest, net worth, and side hustles. No sign-up required.",
+    "Free financial calculators: budget planner, savings goals, debt payoff, FIRE, compound interest, net worth, and side hustles. No sign-up required.",
   keywords: [
     "financial calculator",
     "savings calculator",
@@ -72,6 +72,13 @@ const calculators = [
     title: "Mortgage Calculator",
     desc: "Calculate your monthly payment with principal, interest, taxes, insurance, and PMI. Full amortization schedule.",
     color: "from-sky-500 to-sky-600",
+    stats: "8 scenarios",
+  },
+  {
+    href: "/budget",
+    title: "50/30/20 Budget Calculator",
+    desc: "Enter your income and get a personalized budget split for needs, wants, and savings. Spending suggestions included.",
+    color: "from-amber-500 to-amber-600",
     stats: "8 scenarios",
   },
 ];

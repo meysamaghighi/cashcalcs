@@ -37,6 +37,7 @@ const navLinks = [
   { href: "/net-worth", label: "Net Worth", color: "hover:text-orange-600" },
   { href: "/subscription-tracker", label: "Subscriptions", color: "hover:text-rose-600" },
   { href: "/mortgage-calculator", label: "Mortgage", color: "hover:text-sky-600" },
+  { href: "/budget", label: "Budget", color: "hover:text-amber-600" },
 ];
 
 export default function RootLayout({
@@ -93,7 +94,7 @@ gtag('config', 'G-P0H2GLZMKS');`}
         {/* Footer */}
         <footer className="bg-gray-50 border-t border-gray-100 py-8 mt-12">
           <div className="max-w-5xl mx-auto px-4">
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6 mb-6">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-9 gap-6 mb-6">
               <div>
                 <h3 className="font-bold text-gray-900 mb-2 text-sm">Side Hustles</h3>
                 <ul className="space-y-1 text-xs text-gray-500">
@@ -156,6 +157,14 @@ gtag('config', 'G-P0H2GLZMKS');`}
                   <li><Link href="/mortgage-calculator" className="hover:text-gray-700">Calculator</Link></li>
                   <li><Link href="/mortgage-calculator/first-time-buyer" className="hover:text-gray-700">First-Time Buyer</Link></li>
                   <li><Link href="/mortgage-calculator/15-year-mortgage" className="hover:text-gray-700">15-Year</Link></li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-bold text-gray-900 mb-2 text-sm">Budget</h3>
+                <ul className="space-y-1 text-xs text-gray-500">
+                  <li><Link href="/budget" className="hover:text-gray-700">Calculator</Link></li>
+                  <li><Link href="/budget/50k-salary" className="hover:text-gray-700">$50K Salary</Link></li>
+                  <li><Link href="/budget/100k-salary" className="hover:text-gray-700">$100K Salary</Link></li>
                 </ul>
               </div>
             </div>
