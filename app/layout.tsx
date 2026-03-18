@@ -53,14 +53,14 @@ export default function RootLayout({
           content="ca-pub-2621005924235240"
         />
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-P0H2GLZMKS"
+          src="https://www.googletagmanager.com/gtag/js?id=G-VY7HQL60ZB"
           strategy="beforeInteractive"
         />
         <Script id="ga-init" strategy="beforeInteractive">
           {`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-P0H2GLZMKS');`}
+gtag('config', 'G-VY7HQL60ZB');`}
         </Script>
       </head>
       <body
