@@ -88,6 +88,13 @@ const calculators = [
     color: "from-violet-500 to-violet-600",
     stats: "8 loan types",
   },
+  {
+    href: "/salary-calculator",
+    title: "Salary Calculator",
+    desc: "Convert between hourly, weekly, biweekly, monthly, and annual pay. See your full income breakdown.",
+    color: "from-cyan-500 to-cyan-600",
+    stats: "8 wage levels",
+  },
 ];
 
 export default function Home() {

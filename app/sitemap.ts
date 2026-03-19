@@ -9,6 +9,7 @@ import { subscriptionPresets } from "./lib/subscription-engine";
 import { mortgageScenarios } from "./lib/mortgage-engine";
 import { budgetScenarios } from "./lib/budget-engine";
 import { loanScenarios } from "./lib/loan-engine";
+import { salaryScenarios } from "./lib/salary-engine";
 
 const BASE = "https://cashcalcs.com";
 
@@ -34,6 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/guides/how-to-pay-off-student-loans`, lastModified: now, priority: 0.6 },
     { url: `${BASE}/budget`, lastModified: now, priority: 0.9 },
     { url: `${BASE}/loan-calculator`, lastModified: now, priority: 0.9 },
+    { url: `${BASE}/salary-calculator`, lastModified: now, priority: 0.9 },
   ];
 
   const sideHustlePages = sideHustles.map((h) => ({
@@ -104,6 +106,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...loanScenarios.map((s) => ({
       url: `${BASE}/loan-calculator/${s.slug}`,
+      lastModified: now,
+      priority: 0.7,
+    })),
+    ...salaryScenarios.map((s) => ({
+      url: `${BASE}/salary-calculator/${s.slug}`,
       lastModified: now,
       priority: 0.7,
     })),
