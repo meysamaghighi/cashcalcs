@@ -36,6 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/budget`, lastModified: now, priority: 0.9 },
     { url: `${BASE}/loan-calculator`, lastModified: now, priority: 0.9 },
     { url: `${BASE}/salary-calculator`, lastModified: now, priority: 0.9 },
+    { url: `${BASE}/quiz`, lastModified: now, priority: 0.8 },
   ];
 
   const sideHustlePages = sideHustles.map((h) => ({

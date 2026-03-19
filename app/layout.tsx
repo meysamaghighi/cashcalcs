@@ -40,6 +40,7 @@ const navLinks = [
   { href: "/budget", label: "Budget", color: "hover:text-amber-600" },
   { href: "/loan-calculator", label: "Loans", color: "hover:text-violet-600" },
   { href: "/salary-calculator", label: "Salary", color: "hover:text-cyan-600" },
+  { href: "/quiz", label: "Quiz", color: "hover:text-emerald-600" },
 ];
 
 export default function RootLayout({
