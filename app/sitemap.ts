@@ -30,6 +30,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/guides/how-much-house-can-i-afford`, lastModified: now, priority: 0.6 },
     { url: `${BASE}/guides/what-is-the-fire-movement`, lastModified: now, priority: 0.6 },
     { url: `${BASE}/guides/50-30-20-budget-rule`, lastModified: now, priority: 0.6 },
+    { url: `${BASE}/guides/how-to-build-emergency-fund`, lastModified: now, priority: 0.6 },
+    { url: `${BASE}/guides/how-to-pay-off-student-loans`, lastModified: now, priority: 0.6 },
     { url: `${BASE}/budget`, lastModified: now, priority: 0.9 },
     { url: `${BASE}/loan-calculator`, lastModified: now, priority: 0.9 },
   ];
