@@ -8,6 +8,7 @@ import { networthScenarios } from "./lib/networth-engine";
 import { subscriptionPresets } from "./lib/subscription-engine";
 import { mortgageScenarios } from "./lib/mortgage-engine";
 import { budgetScenarios } from "./lib/budget-engine";
+import { loanScenarios } from "./lib/loan-engine";
 
 const BASE = "https://cashcalcs.com";
 
@@ -30,6 +31,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/guides/what-is-the-fire-movement`, lastModified: now, priority: 0.6 },
     { url: `${BASE}/guides/50-30-20-budget-rule`, lastModified: now, priority: 0.6 },
     { url: `${BASE}/budget`, lastModified: now, priority: 0.9 },
+    { url: `${BASE}/loan-calculator`, lastModified: now, priority: 0.9 },
   ];
 
   const sideHustlePages = sideHustles.map((h) => ({
@@ -95,6 +97,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...budgetScenarios.map((s) => ({
       url: `${BASE}/budget/${s.slug}`,
+      lastModified: now,
+      priority: 0.7,
+    })),
+    ...loanScenarios.map((s) => ({
+      url: `${BASE}/loan-calculator/${s.slug}`,
       lastModified: now,
       priority: 0.7,
     })),

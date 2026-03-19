@@ -38,6 +38,7 @@ const navLinks = [
   { href: "/subscription-tracker", label: "Subscriptions", color: "hover:text-rose-600" },
   { href: "/mortgage-calculator", label: "Mortgage", color: "hover:text-sky-600" },
   { href: "/budget", label: "Budget", color: "hover:text-amber-600" },
+  { href: "/loan-calculator", label: "Loans", color: "hover:text-violet-600" },
 ];
 
 export default function RootLayout({
@@ -94,7 +95,7 @@ gtag('config', 'G-VY7HQL60ZB');`}
         {/* Footer */}
         <footer className="bg-gray-50 border-t border-gray-100 py-8 mt-12">
           <div className="max-w-5xl mx-auto px-4">
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-9 gap-6 mb-6">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-10 gap-6 mb-6">
               <div>
                 <h3 className="font-bold text-gray-900 mb-2 text-sm">Side Hustles</h3>
                 <ul className="space-y-1 text-xs text-gray-500">
@@ -165,6 +166,14 @@ gtag('config', 'G-VY7HQL60ZB');`}
                   <li><Link href="/budget" className="hover:text-gray-700">Calculator</Link></li>
                   <li><Link href="/budget/50k-salary" className="hover:text-gray-700">$50K Salary</Link></li>
                   <li><Link href="/budget/100k-salary" className="hover:text-gray-700">$100K Salary</Link></li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-bold text-gray-900 mb-2 text-sm">Loans</h3>
+                <ul className="space-y-1 text-xs text-gray-500">
+                  <li><Link href="/loan-calculator" className="hover:text-gray-700">Calculator</Link></li>
+                  <li><Link href="/loan-calculator/auto-loan" className="hover:text-gray-700">Auto Loan</Link></li>
+                  <li><Link href="/loan-calculator/personal-loan" className="hover:text-gray-700">Personal Loan</Link></li>
                 </ul>
               </div>
             </div>

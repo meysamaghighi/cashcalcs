@@ -81,6 +81,13 @@ const calculators = [
     color: "from-amber-500 to-amber-600",
     stats: "8 scenarios",
   },
+  {
+    href: "/loan-calculator",
+    title: "Loan Calculator",
+    desc: "Calculate monthly payments for auto, personal, student, or any loan. See amortization and extra payment savings.",
+    color: "from-violet-500 to-violet-600",
+    stats: "8 loan types",
+  },
 ];
 
 export default function Home() {
