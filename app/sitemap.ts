@@ -10,6 +10,9 @@ import { mortgageScenarios } from "./lib/mortgage-engine";
 import { budgetScenarios } from "./lib/budget-engine";
 import { loanScenarios } from "./lib/loan-engine";
 import { salaryScenarios } from "./lib/salary-engine";
+import { taxScenarios } from "./lib/tax-engine";
+import { carScenarios } from "./lib/car-engine";
+import { retirementScenarios } from "./lib/retirement-engine";
 import { inflationPages } from "./lib/inflation-pages";
 import { investmentScenarios } from "./lib/investment-engine";
 
@@ -40,6 +43,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/budget`, lastModified: now, priority: 0.9 },
     { url: `${BASE}/loan-calculator`, lastModified: now, priority: 0.9 },
     { url: `${BASE}/salary-calculator`, lastModified: now, priority: 0.9 },
+    { url: `${BASE}/car-calculator`, lastModified: now, priority: 0.9 },
+    { url: `${BASE}/retirement-calculator`, lastModified: now, priority: 0.9 },
+    { url: `${BASE}/tax-calculator`, lastModified: now, priority: 0.9 },
     { url: `${BASE}/investment-calculator`, lastModified: now, priority: 0.9 },
     { url: `${BASE}/inflation-calculator`, lastModified: now, priority: 0.9 },
     { url: `${BASE}/quiz`, lastModified: now, priority: 0.8 },
@@ -118,6 +124,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...salaryScenarios.map((s) => ({
       url: `${BASE}/salary-calculator/${s.slug}`,
+      lastModified: now,
+      priority: 0.7,
+    })),
+    ...taxScenarios.map((s) => ({
+      url: `${BASE}/tax-calculator/${s.slug}`,
+      lastModified: now,
+      priority: 0.7,
+    })),
+    ...carScenarios.map((s) => ({
+      url: `${BASE}/car-calculator/${s.slug}`,
+      lastModified: now,
+      priority: 0.7,
+    })),
+    ...retirementScenarios.map((s) => ({
+      url: `${BASE}/retirement-calculator/${s.slug}`,
       lastModified: now,
       priority: 0.7,
     })),

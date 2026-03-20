@@ -96,6 +96,27 @@ const calculators = [
     stats: "8 wage levels",
   },
   {
+    href: "/car-calculator",
+    title: "Car Affordability Calculator",
+    desc: "Find out how much car you can afford based on your income. Includes insurance, gas, and loan payments.",
+    color: "from-lime-500 to-lime-600",
+    stats: "4 scenarios",
+  },
+  {
+    href: "/retirement-calculator",
+    title: "Retirement Calculator",
+    desc: "See if you're on track for retirement. Calculate your nest egg, monthly income, and how long savings last.",
+    color: "from-blue-500 to-blue-600",
+    stats: "4 scenarios",
+  },
+  {
+    href: "/tax-calculator",
+    title: "Income Tax Calculator",
+    desc: "Estimate federal and state income tax. See your effective vs marginal rate and full bracket breakdown.",
+    color: "from-indigo-500 to-indigo-600",
+    stats: "4 scenarios",
+  },
+  {
     href: "/investment-calculator",
     title: "Investment Returns Calculator",
     desc: "See how your investments grow with compound returns. Stacked charts show contributions vs earnings.",

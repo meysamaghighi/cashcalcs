@@ -40,6 +40,9 @@ const navLinks = [
   { href: "/budget", label: "Budget", color: "hover:text-amber-600" },
   { href: "/loan-calculator", label: "Loans", color: "hover:text-violet-600" },
   { href: "/salary-calculator", label: "Salary", color: "hover:text-cyan-600" },
+  { href: "/car-calculator", label: "Car", color: "hover:text-lime-600" },
+  { href: "/retirement-calculator", label: "Retirement", color: "hover:text-blue-600" },
+  { href: "/tax-calculator", label: "Tax", color: "hover:text-indigo-600" },
   { href: "/investment-calculator", label: "Investment", color: "hover:text-green-600" },
   { href: "/inflation-calculator", label: "Inflation", color: "hover:text-red-600" },
   { href: "/quiz", label: "Quiz", color: "hover:text-emerald-600" },
@@ -99,7 +102,7 @@ gtag('config', 'G-VY7HQL60ZB');`}
         {/* Footer */}
         <footer className="bg-gray-50 border-t border-gray-100 py-8 mt-12">
           <div className="max-w-5xl mx-auto px-4">
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-5 mb-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4 mb-6 text-xs">
               <div>
                 <h3 className="font-bold text-gray-900 mb-2 text-sm">Side Hustles</h3>
                 <ul className="space-y-1 text-xs text-gray-500">
@@ -165,6 +168,14 @@ gtag('config', 'G-VY7HQL60ZB');`}
                 </ul>
               </div>
               <div>
+                <h3 className="font-bold text-gray-900 mb-2 text-sm">Car</h3>
+                <ul className="space-y-1 text-xs text-gray-500">
+                  <li><Link href="/car-calculator" className="hover:text-gray-700">Calculator</Link></li>
+                  <li><Link href="/car-calculator/50k-salary" className="hover:text-gray-700">$50K Salary</Link></li>
+                  <li><Link href="/car-calculator/used-car-budget" className="hover:text-gray-700">Used Car</Link></li>
+                </ul>
+              </div>
+              <div>
                 <h3 className="font-bold text-gray-900 mb-2 text-sm">Budget</h3>
                 <ul className="space-y-1 text-xs text-gray-500">
                   <li><Link href="/budget" className="hover:text-gray-700">Calculator</Link></li>
@@ -189,11 +200,27 @@ gtag('config', 'G-VY7HQL60ZB');`}
                 </ul>
               </div>
               <div>
+                <h3 className="font-bold text-gray-900 mb-2 text-sm">Retirement</h3>
+                <ul className="space-y-1 text-xs text-gray-500">
+                  <li><Link href="/retirement-calculator" className="hover:text-gray-700">Calculator</Link></li>
+                  <li><Link href="/retirement-calculator/retire-at-60" className="hover:text-gray-700">Early at 60</Link></li>
+                  <li><Link href="/retirement-calculator/retire-at-65" className="hover:text-gray-700">Standard at 65</Link></li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-bold text-gray-900 mb-2 text-sm">Tax</h3>
+                <ul className="space-y-1 text-xs text-gray-500">
+                  <li><Link href="/tax-calculator" className="hover:text-gray-700">Calculator</Link></li>
+                  <li><Link href="/tax-calculator/75k-income" className="hover:text-gray-700">$75K Income</Link></li>
+                  <li><Link href="/tax-calculator/100k-income" className="hover:text-gray-700">$100K Income</Link></li>
+                </ul>
+              </div>
+              <div>
                 <h3 className="font-bold text-gray-900 mb-2 text-sm">Investment</h3>
                 <ul className="space-y-1 text-xs text-gray-500">
                   <li><Link href="/investment-calculator" className="hover:text-gray-700">Calculator</Link></li>
                   <li><Link href="/investment-calculator/sp500-returns" className="hover:text-gray-700">S&P 500</Link></li>
-                  <li><Link href="/investment-calculator/100-per-month" className="hover:text-gray-700">$100/Month</Link></li>
+                  <li><Link href="/investment-calculator/roth-ira-growth" className="hover:text-gray-700">Roth IRA</Link></li>
                 </ul>
               </div>
               <div>

@@ -45,6 +45,42 @@ export const inflationPages: InflationPreset[] = [
     content:
       "Inflation is one of the biggest threats to retirees. Over a 30-year retirement, even moderate 3% inflation turns $1 million into the equivalent of about $412,000 in today's purchasing power. This is why financial advisors recommend a diversified portfolio that continues to grow during retirement, rather than relying entirely on fixed-income investments.",
   },
+  {
+    slug: "5-year-inflation",
+    name: "5-Year Inflation Impact",
+    seoTitle: "5-Year Inflation Calculator - Short-Term Purchasing Power",
+    seoDescription:
+      "Calculate how inflation affects your money over 5 years. See the short-term impact on your savings and emergency fund.",
+    description:
+      "Even over just 5 years, inflation can noticeably erode your savings.",
+    presetYears: 5,
+    content:
+      "Five years may seem short, but at 3% inflation, $100,000 loses over $14,000 in purchasing power. This is especially relevant for emergency funds and short-term savings sitting in low-interest accounts. If your savings account pays less than the inflation rate, you're losing real value every year.",
+  },
+  {
+    slug: "college-savings-inflation",
+    name: "College Savings Inflation",
+    seoTitle: "College Tuition Inflation Calculator - Future Cost of Education",
+    seoDescription:
+      "Calculate how inflation will affect college tuition costs. Plan ahead for education expenses with our free calculator.",
+    description:
+      "College costs have historically risen faster than general inflation. Plan ahead.",
+    presetYears: 18,
+    content:
+      "College tuition inflation has averaged about 5-8% annually — significantly higher than general inflation. If a 4-year degree costs $100,000 today, at 6% education inflation it could cost over $285,000 in 18 years. Starting a 529 plan early is one of the best ways to combat rising education costs through tax-advantaged compound growth.",
+  },
+  {
+    slug: "healthcare-inflation",
+    name: "Healthcare Cost Inflation",
+    seoTitle: "Healthcare Inflation Calculator - Rising Medical Costs",
+    seoDescription:
+      "Calculate how healthcare inflation affects your future medical costs. Healthcare costs rise faster than general inflation.",
+    description:
+      "Healthcare costs have historically outpaced general inflation significantly.",
+    presetYears: 25,
+    content:
+      "Healthcare inflation has averaged about 5-6% annually in the US, roughly double the general inflation rate. A medical procedure that costs $10,000 today could cost over $34,000 in 25 years at 5% healthcare inflation. This is a critical factor in retirement planning — healthcare is often the largest expense for retirees, and costs continue to rise as you age.",
+  },
 ];
 
 export function getInflationPage(slug: string): InflationPreset | undefined {
