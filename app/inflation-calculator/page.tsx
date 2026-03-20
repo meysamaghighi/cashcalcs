@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import InflationCalculator from "../components/InflationCalculator";
+import RelatedCalculators from "../components/RelatedCalculators";
 
 export const metadata: Metadata = {
   title: "Inflation Calculator - How Much Will Your Money Be Worth? | CashCalcs",
@@ -14,6 +15,12 @@ export const metadata: Metadata = {
     "money value over time",
     "real value calculator",
   ],
+  openGraph: {
+    title: "Inflation Calculator - How Much Will Your Money Be Worth? | CashCalcs",
+    description:
+      "Free inflation calculator. See how inflation erodes your purchasing power over time and how much you'll need in the future to match today's value.",
+    type: "website",
+  },
 };
 
 const faqData = [
@@ -92,6 +99,8 @@ export default function InflationPage() {
           </ul>
         </div>
       </section>
+
+      <RelatedCalculators current="/inflation-calculator" />
 
       {/* FAQ */}
       <section className="max-w-4xl mx-auto px-4 pb-16">

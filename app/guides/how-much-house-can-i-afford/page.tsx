@@ -13,6 +13,12 @@ export const metadata: Metadata = {
     "income needed to buy a house",
     "first time home buyer guide",
   ],
+  openGraph: {
+    title: "How Much House Can I Afford? (2026 Guide) | CashCalcs",
+    description:
+      "Learn how much house you can afford based on your income, debts, and down payment. Includes the 28/36 rule, income requirements by home price, and tips to afford more.",
+    type: "article",
+  },
 };
 
 export default function HowMuchHouseGuide() {
@@ -182,6 +188,16 @@ export default function HowMuchHouseGuide() {
             <li><strong>Utilities:</strong> Often higher than renting — larger space, lawn care, etc.</li>
             <li><strong>Furnishing:</strong> A new home often needs $5,000-15,000 in furniture and appliances</li>
           </ul>
+        </section>
+
+        <section className="bg-gray-900 rounded-2xl p-6 text-center">
+          <h2 className="text-xl font-bold text-white mb-3">Try These Calculators</h2>
+          <p className="text-gray-400 mb-4">Put this knowledge into action with our free tools.</p>
+          <div className="flex flex-wrap gap-3 justify-center">
+            <Link href="/mortgage-calculator" className="px-5 py-2 bg-sky-500 hover:bg-sky-600 text-white rounded-lg font-medium transition-colors">Mortgage Calculator</Link>
+            <Link href="/car-calculator" className="px-5 py-2 bg-lime-500 hover:bg-lime-600 text-white rounded-lg font-medium transition-colors">Car Calculator</Link>
+            <Link href="/savings-goal" className="px-5 py-2 bg-purple-500 hover:bg-purple-600 text-white rounded-lg font-medium transition-colors">Savings Goal</Link>
+          </div>
         </section>
 
         <div className="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">

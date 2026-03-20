@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import SideHustleCalculator from "../components/SideHustleCalculator";
 import { sideHustles, getAllCategories } from "../lib/side-hustles";
+import RelatedCalculators from "../components/RelatedCalculators";
 
 export const metadata: Metadata = {
   title: "Side Hustle Calculator - Best Side Hustles 2026 | CashCalcs",
@@ -18,6 +19,12 @@ export const metadata: Metadata = {
     "freelance work",
     "gig economy",
   ],
+  openGraph: {
+    title: "Side Hustle Calculator - Best Side Hustles 2026 | CashCalcs",
+    description:
+      "Free side hustle calculator. Get personalized recommendations based on your hours and skills. 30+ side hustles with earnings.",
+    type: "website",
+  },
 };
 
 export default function SideHustlePage() {
@@ -128,6 +135,8 @@ export default function SideHustlePage() {
           </p>
         </div>
       </section>
+
+      <RelatedCalculators current="/side-hustle" />
 
       <section className="max-w-4xl mx-auto px-4 pb-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">

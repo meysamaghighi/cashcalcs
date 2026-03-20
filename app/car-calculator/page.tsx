@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import CarCalculator from "../components/CarCalculator";
 import { carScenarios } from "../lib/car-engine";
+import RelatedCalculators from "../components/RelatedCalculators";
 
 export const metadata: Metadata = {
   title: "Car Affordability Calculator - How Much Car Can I Afford? | CashCalcs",
@@ -17,6 +18,12 @@ export const metadata: Metadata = {
     "car loan with insurance",
     "used car budget",
   ],
+  openGraph: {
+    title: "Car Affordability Calculator - How Much Car Can I Afford? | CashCalcs",
+    description:
+      "Free car affordability calculator. Calculate your max car price, monthly payment, insurance, and gas based on your income. See what you can really afford.",
+    type: "website",
+  },
 };
 
 export default function CarCalculatorPage() {
@@ -117,6 +124,8 @@ export default function CarCalculatorPage() {
           </div>
         </div>
       </section>
+
+      <RelatedCalculators current="/car-calculator" />
 
       <section className="max-w-4xl mx-auto px-4 pb-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">

@@ -14,6 +14,12 @@ export const metadata: Metadata = {
     "personal budget",
     "needs wants savings",
   ],
+  openGraph: {
+    title: "The 50/30/20 Budget Rule Explained (With Examples) | CashCalcs",
+    description:
+      "Learn the 50/30/20 budget rule with real examples. How to split your income into needs, wants, and savings. Includes budget breakdowns for every income level.",
+    type: "article",
+  },
 };
 
 export default function BudgetRuleGuide() {
@@ -165,6 +171,16 @@ export default function BudgetRuleGuide() {
               <li><strong>Set up automated savings.</strong> On payday, automatically transfer 20% to a savings or investment account. Pay yourself first.</li>
               <li><strong>Use what is left for wants.</strong> The remaining 30% is your guilt-free spending money. Enjoy it without stress.</li>
             </ol>
+          </section>
+
+          <section className="bg-gray-900 rounded-2xl p-6 text-center">
+            <h2 className="text-xl font-bold text-white mb-3">Try These Calculators</h2>
+            <p className="text-gray-400 mb-4">Put this knowledge into action with our free tools.</p>
+            <div className="flex flex-wrap gap-3 justify-center">
+              <Link href="/budget" className="px-5 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-lg font-medium transition-colors">Budget Calculator</Link>
+              <Link href="/savings-goal" className="px-5 py-2 bg-purple-500 hover:bg-purple-600 text-white rounded-lg font-medium transition-colors">Savings Goal</Link>
+              <Link href="/subscription-tracker" className="px-5 py-2 bg-rose-500 hover:bg-rose-600 text-white rounded-lg font-medium transition-colors">Subscription Tracker</Link>
+            </div>
           </section>
         </div>
 

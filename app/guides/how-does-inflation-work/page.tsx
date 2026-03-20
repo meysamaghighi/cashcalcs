@@ -14,6 +14,12 @@ export const metadata: Metadata = {
     "inflation and savings",
     "inflation protection",
   ],
+  openGraph: {
+    title: "How Does Inflation Work? A Simple Explanation | CashCalcs",
+    description:
+      "Understand how inflation works, why prices rise, and how to protect your money. Learn about CPI, the Fed's role, and inflation-proof investment strategies.",
+    type: "article",
+  },
 };
 
 export default function InflationGuide() {

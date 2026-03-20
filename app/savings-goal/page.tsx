@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import SavingsCalculator from "../components/SavingsCalculator";
 import { savingsGoals } from "../lib/savings-engine";
+import RelatedCalculators from "../components/RelatedCalculators";
 
 export const metadata: Metadata = {
   title: "Savings Goal Calculator | CashCalcs",
@@ -16,6 +17,12 @@ export const metadata: Metadata = {
     "down payment calculator",
     "monthly savings calculator",
   ],
+  openGraph: {
+    title: "Savings Goal Calculator | CashCalcs",
+    description:
+      "Free savings goal calculator with compound interest. Plan for emergency fund, house, vacation, car, wedding, or retirement.",
+    type: "website",
+  },
 };
 
 export default function SavingsGoalPage() {
@@ -85,6 +92,8 @@ export default function SavingsGoalPage() {
           </p>
         </div>
       </section>
+
+      <RelatedCalculators current="/savings-goal" />
 
       <section className="max-w-4xl mx-auto px-4 pb-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">

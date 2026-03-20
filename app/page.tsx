@@ -2,19 +2,31 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "CashCalcs - Free Financial Calculators",
+  title: "CashCalcs - Free Financial Calculators | 16 Tools, No Sign-Up",
   description:
-    "Free financial calculators: budget planner, savings goals, debt payoff, FIRE, compound interest, net worth, and side hustles. No sign-up required.",
+    "16 free financial calculators: budget, savings, debt payoff, FIRE, compound interest, net worth, mortgage, loan, salary, tax, retirement, investment, inflation, car affordability, side hustles, and subscriptions. No sign-up required.",
   keywords: [
     "financial calculator",
+    "free finance tools",
+    "budget calculator",
     "savings calculator",
     "debt payoff calculator",
     "FIRE calculator",
-    "side hustle calculator",
-    "free finance tools",
+    "retirement calculator",
+    "investment calculator",
+    "tax calculator",
+    "mortgage calculator",
+    "inflation calculator",
     "compound interest calculator",
-    "early retirement calculator",
+    "side hustle calculator",
+    "car affordability calculator",
   ],
+  openGraph: {
+    title: "CashCalcs - 16 Free Financial Calculators",
+    description: "Free calculators for budgeting, savings, debt, retirement, taxes, investments, and more. No sign-up required.",
+    type: "website",
+    siteName: "CashCalcs",
+  },
 };
 
 const calculators = [

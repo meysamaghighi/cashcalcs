@@ -14,6 +14,12 @@ export const metadata: Metadata = {
     "student loan forgiveness",
     "how to pay off student debt",
   ],
+  openGraph: {
+    title: "How to Pay Off Student Loans Faster (2026 Guide) | CashCalcs",
+    description:
+      "Strategies to pay off student loans faster: refinancing, extra payments, income-driven plans, forgiveness programs, and the math behind each option.",
+    type: "article",
+  },
 };
 
 export default function StudentLoanGuide() {
@@ -225,6 +231,16 @@ export default function StudentLoanGuide() {
               <li><strong>Bi-weekly payments</strong> - Pay half your monthly amount every two weeks. This equals 13 full payments per year instead of 12.</li>
               <li><strong>Student loan interest deduction</strong> - Deduct up to $2,500/year in interest from your taxes. Use the savings for extra payments.</li>
             </ul>
+          </div>
+        </section>
+
+        <section className="bg-gray-900 rounded-2xl p-6 text-center">
+          <h2 className="text-xl font-bold text-white mb-3">Try These Calculators</h2>
+          <p className="text-gray-400 mb-4">Put this knowledge into action with our free tools.</p>
+          <div className="flex flex-wrap gap-3 justify-center">
+            <Link href="/debt-payoff" className="px-5 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-medium transition-colors">Debt Payoff Calculator</Link>
+            <Link href="/loan-calculator" className="px-5 py-2 bg-violet-500 hover:bg-violet-600 text-white rounded-lg font-medium transition-colors">Loan Calculator</Link>
+            <Link href="/side-hustle" className="px-5 py-2 bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg font-medium transition-colors">Side Hustle Calculator</Link>
           </div>
         </section>
 

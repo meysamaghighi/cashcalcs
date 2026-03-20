@@ -13,6 +13,12 @@ export const metadata: Metadata = {
     "how to pay off debt",
     "debt payoff strategy",
   ],
+  openGraph: {
+    title: "Debt Avalanche vs Snowball Method: Which is Better? | CashCalcs",
+    description:
+      "Compare debt avalanche vs snowball methods. Learn which debt payoff strategy saves more money, which keeps you motivated, and which is right for you.",
+    type: "article",
+  },
 };
 
 export default function DebtAvalancheVsSnowball() {
@@ -165,6 +171,16 @@ export default function DebtAvalancheVsSnowball() {
               <li><strong>Do not add new debt.</strong> Cut up the credit cards or freeze them (literally, in ice) while paying off existing balances.</li>
               <li><strong>Track your progress.</strong> Use our calculator to see your debt-free date and watch it get closer each month.</li>
             </ul>
+          </section>
+
+          <section className="bg-gray-900 rounded-2xl p-6 text-center">
+            <h2 className="text-xl font-bold text-white mb-3">Try These Calculators</h2>
+            <p className="text-gray-400 mb-4">Put this knowledge into action with our free tools.</p>
+            <div className="flex flex-wrap gap-3 justify-center">
+              <Link href="/debt-payoff" className="px-5 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-medium transition-colors">Debt Payoff Calculator</Link>
+              <Link href="/loan-calculator" className="px-5 py-2 bg-violet-500 hover:bg-violet-600 text-white rounded-lg font-medium transition-colors">Loan Calculator</Link>
+              <Link href="/budget" className="px-5 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-lg font-medium transition-colors">Budget Calculator</Link>
+            </div>
           </section>
         </div>
 

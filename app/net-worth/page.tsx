@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import NetWorthCalculator from "../components/NetWorthCalculator";
 import { networthScenarios } from "../lib/networth-engine";
+import RelatedCalculators from "../components/RelatedCalculators";
 
 export const metadata: Metadata = {
   title: "Net Worth Calculator - Track Your Total Wealth | CashCalcs",
@@ -17,6 +18,12 @@ export const metadata: Metadata = {
     "wealth calculator",
     "personal net worth",
   ],
+  openGraph: {
+    title: "Net Worth Calculator - Track Your Total Wealth | CashCalcs",
+    description:
+      "Free net worth calculator. Add your assets and debts to see your total net worth, financial health score, and breakdown charts. Compare to benchmarks by age.",
+    type: "website",
+  },
 };
 
 export default function NetWorthPage() {
@@ -133,6 +140,8 @@ export default function NetWorthPage() {
           </p>
         </div>
       </section>
+
+      <RelatedCalculators current="/net-worth" />
 
       <section className="max-w-4xl mx-auto px-4 pb-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">

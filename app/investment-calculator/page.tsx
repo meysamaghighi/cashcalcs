@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import InvestmentCalculator from "../components/InvestmentCalculator";
 import { investmentScenarios } from "../lib/investment-engine";
+import RelatedCalculators from "../components/RelatedCalculators";
 
 export const metadata: Metadata = {
   title: "Investment Returns Calculator - How Much Will My Investments Grow? | CashCalcs",
@@ -16,6 +17,12 @@ export const metadata: Metadata = {
     "investment growth calculator",
     "retirement investment calculator",
   ],
+  openGraph: {
+    title: "Investment Returns Calculator - How Much Will My Investments Grow? | CashCalcs",
+    description:
+      "Free investment returns calculator. See how your investments grow with compound returns. Compare scenarios, adjust for inflation, and plan your financial future.",
+    type: "website",
+  },
 };
 
 const faqData = [
@@ -106,6 +113,8 @@ export default function InvestmentPage() {
           </p>
         </div>
       </section>
+
+      <RelatedCalculators current="/investment-calculator" />
 
       {/* FAQ */}
       <section className="max-w-4xl mx-auto px-4 pb-16">

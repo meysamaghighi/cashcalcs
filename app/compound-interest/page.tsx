@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import CompoundCalculator from "../components/CompoundCalculator";
 import { compoundScenarios } from "../lib/compound-engine";
+import RelatedCalculators from "../components/RelatedCalculators";
 
 export const metadata: Metadata = {
   title: "Compound Interest Calculator - See Your Money Grow | CashCalcs",
@@ -17,6 +18,12 @@ export const metadata: Metadata = {
     "rule of 72",
     "how much will my money grow",
   ],
+  openGraph: {
+    title: "Compound Interest Calculator - See Your Money Grow | CashCalcs",
+    description:
+      "Free compound interest calculator. Enter your investment, monthly contributions, and interest rate to see how your money grows over time. Interactive charts and year-by-year breakdowns.",
+    type: "website",
+  },
 };
 
 export default function CompoundInterestPage() {
@@ -132,6 +139,8 @@ export default function CompoundInterestPage() {
           </p>
         </div>
       </section>
+
+      <RelatedCalculators current="/compound-interest" />
 
       <section className="max-w-4xl mx-auto px-4 pb-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">

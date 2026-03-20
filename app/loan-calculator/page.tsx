@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import LoanCalculator from "../components/LoanCalculator";
 import { loanScenarios } from "../lib/loan-engine";
+import RelatedCalculators from "../components/RelatedCalculators";
 
 export const metadata: Metadata = {
   title: "Loan Calculator - Monthly Payment & Amortization | CashCalcs",
@@ -17,6 +18,12 @@ export const metadata: Metadata = {
     "loan amortization",
     "monthly payment calculator",
   ],
+  openGraph: {
+    title: "Loan Calculator - Monthly Payment & Amortization | CashCalcs",
+    description:
+      "Free loan calculator with monthly payment, total interest, and amortization schedule. Calculate auto loans, personal loans, student loans, and more.",
+    type: "website",
+  },
 };
 
 export default function LoanCalculatorPage() {
@@ -147,6 +154,8 @@ export default function LoanCalculatorPage() {
           </table>
         </div>
       </section>
+
+      <RelatedCalculators current="/loan-calculator" />
 
       <section className="max-w-4xl mx-auto px-4 pb-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">

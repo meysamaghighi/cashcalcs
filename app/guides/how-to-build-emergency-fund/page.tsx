@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     "rainy day fund",
     "emergency fund calculator",
   ],
+  openGraph: {
+    title: "How to Build an Emergency Fund (Step-by-Step Guide 2026) | CashCalcs",
+    description:
+      "Learn how to build an emergency fund from scratch. How much to save, where to keep it, and step-by-step tips to build 3-6 months of expenses.",
+    type: "article",
+  },
 };
 
 export default function EmergencyFundGuide() {
@@ -238,6 +244,16 @@ export default function EmergencyFundGuide() {
                 <li>Annual insurance premiums (these are predictable)</li>
               </ul>
             </div>
+          </div>
+        </section>
+
+        <section className="bg-gray-900 rounded-2xl p-6 text-center">
+          <h2 className="text-xl font-bold text-white mb-3">Try These Calculators</h2>
+          <p className="text-gray-400 mb-4">Put this knowledge into action with our free tools.</p>
+          <div className="flex flex-wrap gap-3 justify-center">
+            <Link href="/savings-goal" className="px-5 py-2 bg-purple-500 hover:bg-purple-600 text-white rounded-lg font-medium transition-colors">Savings Goal</Link>
+            <Link href="/budget" className="px-5 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-lg font-medium transition-colors">Budget Calculator</Link>
+            <Link href="/investment-calculator" className="px-5 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg font-medium transition-colors">Investment Calculator</Link>
           </div>
         </section>
 

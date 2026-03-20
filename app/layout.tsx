@@ -19,10 +19,10 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://cashcalcs.com"),
   title: "CashCalcs - Free Financial Calculators",
   description:
-    "Free financial calculators: savings goals, debt payoff, FIRE, compound interest, net worth, and side hustles.",
+    "16 free financial calculators: budget, savings, debt, FIRE, retirement, tax, investment, mortgage, loan, salary, inflation, car, compound interest, net worth, side hustles, and subscriptions.",
   openGraph: {
     title: "CashCalcs - Free Financial Calculators",
-    description: "Free calculators for savings, debt payoff, FIRE, compound interest, net worth, and side hustles.",
+    description: "16 free calculators for budgeting, savings, debt, retirement, taxes, investments, and more.",
     type: "website",
     siteName: "CashCalcs",
   },

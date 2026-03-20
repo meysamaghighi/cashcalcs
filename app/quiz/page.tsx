@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     "financial health score",
     "money management quiz",
   ],
+  openGraph: {
+    title: "Financial Health Quiz - How Healthy Are Your Finances? | CashCalcs",
+    description:
+      "Take our free 10-question financial health quiz. Get a personalized score across saving, budgeting, debt, investing, and protection with actionable recommendations.",
+    type: "website",
+  },
 };
 
 export default function QuizPage() {

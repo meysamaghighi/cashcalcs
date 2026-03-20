@@ -14,6 +14,12 @@ export const metadata: Metadata = {
     "first time investing",
     "stock market for beginners",
   ],
+  openGraph: {
+    title: "How to Start Investing: A Beginner's Guide (2026) | CashCalcs",
+    description:
+      "Learn how to start investing from scratch. Covers brokerage accounts, index funds, asset allocation, and how much to invest. Simple, jargon-free guide for beginners.",
+    type: "article",
+  },
 };
 
 export default function InvestingGuide() {

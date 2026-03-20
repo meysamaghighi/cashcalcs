@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import DebtCalculator from "../components/DebtCalculator";
 import { debtTypes } from "../lib/debt-engine";
+import RelatedCalculators from "../components/RelatedCalculators";
 
 export const metadata: Metadata = {
   title: "Debt Payoff Calculator - Avalanche vs Snowball | CashCalcs",
@@ -17,6 +18,12 @@ export const metadata: Metadata = {
     "credit card payoff calculator",
     "student loan payoff calculator",
   ],
+  openGraph: {
+    title: "Debt Payoff Calculator - Avalanche vs Snowball | CashCalcs",
+    description:
+      "Free debt payoff calculator. Compare avalanche and snowball methods, see your debt-free date and interest savings.",
+    type: "website",
+  },
 };
 
 export default function DebtPayoffPage() {
@@ -91,6 +98,8 @@ export default function DebtPayoffPage() {
           </p>
         </div>
       </section>
+
+      <RelatedCalculators current="/debt-payoff" />
 
       <section className="max-w-4xl mx-auto px-4 pb-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">

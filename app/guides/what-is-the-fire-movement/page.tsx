@@ -14,6 +14,12 @@ export const metadata: Metadata = {
     "lean fire vs fat fire",
     "coast fire",
   ],
+  openGraph: {
+    title: "What is the FIRE Movement? (Beginner's Guide 2026) | CashCalcs",
+    description:
+      "Learn about the FIRE movement (Financial Independence, Retire Early). Covers Lean FIRE, Fat FIRE, Coast FIRE, Barista FIRE, the 4% rule, and how to get started.",
+    type: "article",
+  },
 };
 
 export default function WhatIsFireGuide() {
@@ -204,6 +210,16 @@ export default function WhatIsFireGuide() {
                 earn some income from hobbies or part-time work.
               </p>
             </div>
+          </div>
+        </section>
+
+        <section className="bg-gray-900 rounded-2xl p-6 text-center">
+          <h2 className="text-xl font-bold text-white mb-3">Try These Calculators</h2>
+          <p className="text-gray-400 mb-4">Put this knowledge into action with our free tools.</p>
+          <div className="flex flex-wrap gap-3 justify-center">
+            <Link href="/fire-calculator" className="px-5 py-2 bg-indigo-500 hover:bg-indigo-600 text-white rounded-lg font-medium transition-colors">FIRE Calculator</Link>
+            <Link href="/investment-calculator" className="px-5 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg font-medium transition-colors">Investment Calculator</Link>
+            <Link href="/retirement-calculator" className="px-5 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-medium transition-colors">Retirement Calculator</Link>
           </div>
         </section>
 

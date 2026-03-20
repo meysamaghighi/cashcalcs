@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import MortgageCalculator from "../components/MortgageCalculator";
 import { mortgageScenarios } from "../lib/mortgage-engine";
+import RelatedCalculators from "../components/RelatedCalculators";
 
 export const metadata: Metadata = {
   title: "Mortgage Calculator - Monthly Payment & Amortization | CashCalcs",
@@ -17,6 +18,12 @@ export const metadata: Metadata = {
     "how much house can I afford",
     "PMI calculator",
   ],
+  openGraph: {
+    title: "Mortgage Calculator - Monthly Payment & Amortization | CashCalcs",
+    description:
+      "Free mortgage calculator with monthly payment breakdown, amortization schedule, PMI, taxes, and insurance. See how much house you can afford.",
+    type: "website",
+  },
 };
 
 export default function MortgageCalculatorPage() {
@@ -109,6 +116,8 @@ export default function MortgageCalculatorPage() {
           </div>
         </div>
       </section>
+
+      <RelatedCalculators current="/mortgage-calculator" />
 
       <section className="max-w-4xl mx-auto px-4 pb-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">

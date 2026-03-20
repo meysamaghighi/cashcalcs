@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import RetirementCalculator from "../components/RetirementCalculator";
 import { retirementScenarios } from "../lib/retirement-engine";
+import RelatedCalculators from "../components/RelatedCalculators";
 
 export const metadata: Metadata = {
   title: "Retirement Calculator - How Much Do You Need to Retire? | CashCalcs",
@@ -17,6 +18,12 @@ export const metadata: Metadata = {
     "early retirement calculator",
     "retirement planning",
   ],
+  openGraph: {
+    title: "Retirement Calculator - How Much Do You Need to Retire? | CashCalcs",
+    description:
+      "Free retirement calculator with Social Security and 4% rule. Calculate your retirement nest egg, monthly income, and if you're on track to retire comfortably.",
+    type: "website",
+  },
 };
 
 export default function RetirementCalculatorPage() {
@@ -112,6 +119,8 @@ export default function RetirementCalculatorPage() {
           </p>
         </div>
       </section>
+
+      <RelatedCalculators current="/retirement-calculator" />
 
       <section className="max-w-4xl mx-auto px-4 pb-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">

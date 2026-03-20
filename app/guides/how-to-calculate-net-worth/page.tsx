@@ -12,6 +12,12 @@ export const metadata: Metadata = {
     "assets minus liabilities",
     "net worth guide",
   ],
+  openGraph: {
+    title: "How to Calculate Your Net Worth (Step-by-Step Guide) | CashCalcs",
+    description:
+      "Learn how to calculate your net worth in 5 simple steps. Includes what counts as assets vs liabilities, common mistakes, and benchmarks by age.",
+    type: "article",
+  },
 };
 
 export default function HowToCalculateNetWorth() {
@@ -192,6 +198,16 @@ export default function HowToCalculateNetWorth() {
               </Link>{" "}
               to make a plan.
             </p>
+          </section>
+
+          <section className="bg-gray-900 rounded-2xl p-6 text-center">
+            <h2 className="text-xl font-bold text-white mb-3">Try These Calculators</h2>
+            <p className="text-gray-400 mb-4">Put this knowledge into action with our free tools.</p>
+            <div className="flex flex-wrap gap-3 justify-center">
+              <Link href="/net-worth" className="px-5 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded-lg font-medium transition-colors">Net Worth Calculator</Link>
+              <Link href="/retirement-calculator" className="px-5 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-medium transition-colors">Retirement Calculator</Link>
+              <Link href="/investment-calculator" className="px-5 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg font-medium transition-colors">Investment Calculator</Link>
+            </div>
           </section>
         </div>
 

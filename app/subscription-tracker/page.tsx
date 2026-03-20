@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import SubscriptionCalculator from "../components/SubscriptionCalculator";
 import { subscriptionPresets } from "../lib/subscription-engine";
+import RelatedCalculators from "../components/RelatedCalculators";
 
 export const metadata: Metadata = {
   title: "Subscription Tracker - See Your True Monthly Cost | CashCalcs",
@@ -16,6 +17,12 @@ export const metadata: Metadata = {
     "streaming cost calculator",
     "monthly subscription total",
   ],
+  openGraph: {
+    title: "Subscription Tracker - See Your True Monthly Cost | CashCalcs",
+    description:
+      "Free subscription tracker. Add all your subscriptions to see total monthly and yearly cost, category breakdown, and savings potential.",
+    type: "website",
+  },
 };
 
 export default function SubscriptionTrackerPage() {
@@ -106,6 +113,8 @@ export default function SubscriptionTrackerPage() {
           </div>
         </div>
       </section>
+
+      <RelatedCalculators current="/subscription-tracker" />
 
       <section className="max-w-4xl mx-auto px-4 pb-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">

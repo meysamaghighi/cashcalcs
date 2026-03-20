@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import TaxCalculator from "../components/TaxCalculator";
 import { taxScenarios } from "../lib/tax-engine";
+import RelatedCalculators from "../components/RelatedCalculators";
 
 export const metadata: Metadata = {
   title: "Income Tax Calculator 2026 - Federal & State Tax Estimator | CashCalcs",
@@ -17,6 +18,12 @@ export const metadata: Metadata = {
     "tax brackets 2026",
     "state income tax calculator",
   ],
+  openGraph: {
+    title: "Income Tax Calculator 2026 - Federal & State Tax Estimator | CashCalcs",
+    description:
+      "Free income tax calculator for 2026. Calculate federal and state taxes, see your effective vs marginal rate, and get a full bracket breakdown.",
+    type: "website",
+  },
 };
 
 export default function TaxCalculatorPage() {
@@ -166,6 +173,8 @@ export default function TaxCalculatorPage() {
           </div>
         </div>
       </section>
+
+      <RelatedCalculators current="/tax-calculator" />
 
       <section className="max-w-4xl mx-auto px-4 pb-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">

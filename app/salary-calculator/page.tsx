@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import SalaryCalculator from "../components/SalaryCalculator";
 import { salaryScenarios } from "../lib/salary-engine";
+import RelatedCalculators from "../components/RelatedCalculators";
 
 export const metadata: Metadata = {
   title: "Salary Calculator - Hourly to Annual, Weekly to Monthly | CashCalcs",
@@ -18,6 +19,12 @@ export const metadata: Metadata = {
     "pay calculator",
     "20 an hour is how much a year",
   ],
+  openGraph: {
+    title: "Salary Calculator - Hourly to Annual, Weekly to Monthly | CashCalcs",
+    description:
+      "Free salary calculator: convert between hourly, weekly, biweekly, monthly, and annual pay. See how much you make per hour, day, week, month, and year.",
+    type: "website",
+  },
 };
 
 export default function SalaryCalculatorPage() {
@@ -147,6 +154,8 @@ export default function SalaryCalculatorPage() {
           </div>
         </div>
       </section>
+
+      <RelatedCalculators current="/salary-calculator" />
 
       <section className="max-w-4xl mx-auto px-4 pb-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">

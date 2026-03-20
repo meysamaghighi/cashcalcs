@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import FireCalculator from "../components/FireCalculator";
 import { fireScenarios } from "../lib/fire-engine";
+import RelatedCalculators from "../components/RelatedCalculators";
 
 export const metadata: Metadata = {
   title: "FIRE Calculator - When Can You Retire? | CashCalcs",
@@ -17,6 +18,12 @@ export const metadata: Metadata = {
     "coast fire calculator",
     "lean fire calculator",
   ],
+  openGraph: {
+    title: "FIRE Calculator - When Can You Retire? | CashCalcs",
+    description:
+      "Free FIRE calculator. Enter your income, expenses, and savings to find your financial independence date. Compare Lean FIRE, Coast FIRE, Fat FIRE, and Barista FIRE strategies.",
+    type: "website",
+  },
 };
 
 export default function FirePage() {
@@ -82,6 +89,8 @@ export default function FirePage() {
           </p>
         </div>
       </section>
+
+      <RelatedCalculators current="/fire-calculator" />
 
       <section className="max-w-4xl mx-auto px-4 pb-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import BudgetCalculator from "../components/BudgetCalculator";
 import { budgetScenarios } from "../lib/budget-engine";
+import RelatedCalculators from "../components/RelatedCalculators";
 
 export const metadata: Metadata = {
   title: "50/30/20 Budget Calculator - Free Monthly Budget Planner | CashCalcs",
@@ -17,6 +18,12 @@ export const metadata: Metadata = {
     "budgeting tool",
     "personal budget calculator",
   ],
+  openGraph: {
+    title: "50/30/20 Budget Calculator - Free Monthly Budget Planner | CashCalcs",
+    description:
+      "Free 50/30/20 budget calculator. Enter your income to see exactly how much to spend on needs, wants, and savings. Personalized budget breakdown with spending suggestions.",
+    type: "website",
+  },
 };
 
 export default function BudgetPage() {
@@ -154,6 +161,8 @@ export default function BudgetPage() {
           </p>
         </div>
       </section>
+
+      <RelatedCalculators current="/budget" />
 
       <section className="max-w-4xl mx-auto px-4 pb-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">
