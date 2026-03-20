@@ -192,6 +192,8 @@ gtag('config', 'G-VY7HQL60ZB');`}
             </p>
             <p className="text-xs text-gray-400 text-center mt-2">
               <Link href="https://benchmybrain.com" className="hover:text-gray-600">BenchMyBrain</Link> - Free brain &amp; speed tests
+              {" | "}
+              <Link href="https://doodlelab.fun" className="hover:text-gray-600">DoodleLab</Link> - Free drawing games
             </p>
           </div>
         </footer>
