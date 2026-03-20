@@ -6,6 +6,7 @@ import {
   calculateBudget,
   formatCurrency,
 } from "../lib/budget-engine";
+import ShareButton from "./ShareButton";
 
 interface Props {
   defaults?: Partial<BudgetInputs>;
@@ -110,7 +111,10 @@ export default function BudgetCalculator({ defaults }: Props) {
 
       {/* Visual Breakdown */}
       <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
-        <h2 className="text-xl font-bold text-gray-900 mb-6">Your Monthly Budget</h2>
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-xl font-bold text-gray-900">Your Monthly Budget</h2>
+          <ShareButton title="Budget Calculator" text="Check out this free 50/30/20 budget calculator!" />
+        </div>
 
         {/* Stacked bar */}
         <div className="mb-8">

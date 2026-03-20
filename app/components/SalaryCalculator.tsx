@@ -6,6 +6,7 @@ import {
   formatMoney,
   type SalaryInputs,
 } from "../lib/salary-engine";
+import ShareButton from "./ShareButton";
 
 const periods = [
   { value: "hourly", label: "Hourly" },
@@ -138,9 +139,10 @@ export default function SalaryCalculator({
 
       {/* Results Card */}
       <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
-        <h2 className="text-xl font-bold text-gray-900 mb-6">
-          Your Salary Breakdown
-        </h2>
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-xl font-bold text-gray-900">Your Salary Breakdown</h2>
+          <ShareButton title="Salary Calculator" text="Check out this free salary calculator!" />
+        </div>
 
         <div className="text-center mb-8">
           <p className="text-5xl font-extrabold text-cyan-600">

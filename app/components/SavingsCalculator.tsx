@@ -8,6 +8,7 @@ import {
   type SavingsInputs,
   type SavingsGoalType,
 } from "../lib/savings-engine";
+import ShareButton from "./ShareButton";
 
 export default function SavingsCalculator({
   preset,
@@ -116,7 +117,10 @@ export default function SavingsCalculator({
 
       {/* Results */}
       <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
-        <h2 className="text-xl font-bold text-gray-900 mb-6">Your Results</h2>
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-xl font-bold text-gray-900">Your Results</h2>
+          <ShareButton title="Savings Goal Calculator" text="Check out this free savings goal calculator!" />
+        </div>
 
         {/* Progress bar */}
         <div className="mb-6">

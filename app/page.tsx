@@ -95,6 +95,13 @@ const calculators = [
     color: "from-cyan-500 to-cyan-600",
     stats: "8 wage levels",
   },
+  {
+    href: "/inflation-calculator",
+    title: "Inflation Calculator",
+    desc: "See how inflation erodes your purchasing power over time. Find out how much you'll need in the future.",
+    color: "from-red-500 to-red-600",
+    stats: "3 scenarios",
+  },
 ];
 
 export default function Home() {

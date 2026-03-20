@@ -40,6 +40,7 @@ const navLinks = [
   { href: "/budget", label: "Budget", color: "hover:text-amber-600" },
   { href: "/loan-calculator", label: "Loans", color: "hover:text-violet-600" },
   { href: "/salary-calculator", label: "Salary", color: "hover:text-cyan-600" },
+  { href: "/inflation-calculator", label: "Inflation", color: "hover:text-red-600" },
   { href: "/quiz", label: "Quiz", color: "hover:text-emerald-600" },
 ];
 
@@ -97,7 +98,7 @@ gtag('config', 'G-VY7HQL60ZB');`}
         {/* Footer */}
         <footer className="bg-gray-50 border-t border-gray-100 py-8 mt-12">
           <div className="max-w-5xl mx-auto px-4">
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-11 gap-6 mb-6">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-12 gap-6 mb-6">
               <div>
                 <h3 className="font-bold text-gray-900 mb-2 text-sm">Side Hustles</h3>
                 <ul className="space-y-1 text-xs text-gray-500">
@@ -184,6 +185,34 @@ gtag('config', 'G-VY7HQL60ZB');`}
                   <li><Link href="/salary-calculator" className="hover:text-gray-700">Calculator</Link></li>
                   <li><Link href="/salary-calculator/20-an-hour" className="hover:text-gray-700">$20/Hour</Link></li>
                   <li><Link href="/salary-calculator/100k-salary" className="hover:text-gray-700">$100K Salary</Link></li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-bold text-gray-900 mb-2 text-sm">Inflation</h3>
+                <ul className="space-y-1 text-xs text-gray-500">
+                  <li><Link href="/inflation-calculator" className="hover:text-gray-700">Calculator</Link></li>
+                  <li><Link href="/inflation-calculator/10-year-inflation" className="hover:text-gray-700">10-Year</Link></li>
+                  <li><Link href="/inflation-calculator/retirement-inflation" className="hover:text-gray-700">Retirement</Link></li>
+                </ul>
+              </div>
+            </div>
+            <div className="flex justify-center gap-6 mb-6 text-xs text-gray-500">
+              <div>
+                <h3 className="font-bold text-gray-900 mb-2 text-sm">Guides</h3>
+                <ul className="space-y-1">
+                  <li><Link href="/guides/how-to-calculate-net-worth" className="hover:text-gray-700">Net Worth Guide</Link></li>
+                  <li><Link href="/guides/debt-avalanche-vs-snowball" className="hover:text-gray-700">Avalanche vs Snowball</Link></li>
+                  <li><Link href="/guides/how-much-house-can-i-afford" className="hover:text-gray-700">How Much House?</Link></li>
+                  <li><Link href="/guides/what-is-the-fire-movement" className="hover:text-gray-700">FIRE Movement</Link></li>
+                  <li><Link href="/guides/50-30-20-budget-rule" className="hover:text-gray-700">50/30/20 Rule</Link></li>
+                  <li><Link href="/guides/how-to-build-emergency-fund" className="hover:text-gray-700">Emergency Fund</Link></li>
+                  <li><Link href="/guides/how-to-pay-off-student-loans" className="hover:text-gray-700">Student Loans</Link></li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-bold text-gray-900 mb-2 text-sm">More</h3>
+                <ul className="space-y-1">
+                  <li><Link href="/quiz" className="hover:text-gray-700">Financial Health Quiz</Link></li>
                 </ul>
               </div>
             </div>

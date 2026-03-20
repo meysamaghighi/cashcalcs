@@ -6,6 +6,7 @@ import {
   formatCurrency,
   type LoanInputs,
 } from "../lib/loan-engine";
+import ShareButton from "./ShareButton";
 
 export default function LoanCalculator({
   defaults,
@@ -115,7 +116,10 @@ export default function LoanCalculator({
 
       {/* Results Card */}
       <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
-        <h2 className="text-xl font-bold text-gray-900 mb-6">Your Monthly Payment</h2>
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-xl font-bold text-gray-900">Your Monthly Payment</h2>
+          <ShareButton title="Loan Calculator" text="Check out this free loan calculator!" />
+        </div>
 
         <div className="text-center mb-8">
           <p className="text-5xl font-extrabold text-violet-600">

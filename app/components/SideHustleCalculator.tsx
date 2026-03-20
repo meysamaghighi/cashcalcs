@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
+import ShareButton from "./ShareButton";
 import { sideHustles, getAllCategories, type SideHustle } from "../lib/side-hustles";
 
 const skillOptions = [
@@ -227,7 +228,8 @@ export default function Calculator() {
             <h2 className="text-xl font-bold text-gray-900">
               {results.length} side hustles found
             </h2>
-            <div className="flex gap-2">
+            <div className="flex items-center gap-2">
+              <ShareButton title="Side Hustle Calculator" text="Check out this free side hustle calculator!" />
               <span className="text-sm text-gray-500 self-center">Sort by:</span>
               {(["earnings", "ease", "flexibility"] as const).map((s) => (
                 <button

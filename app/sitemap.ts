@@ -10,6 +10,7 @@ import { mortgageScenarios } from "./lib/mortgage-engine";
 import { budgetScenarios } from "./lib/budget-engine";
 import { loanScenarios } from "./lib/loan-engine";
 import { salaryScenarios } from "./lib/salary-engine";
+import { inflationPages } from "./lib/inflation-pages";
 
 const BASE = "https://cashcalcs.com";
 
@@ -36,6 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/budget`, lastModified: now, priority: 0.9 },
     { url: `${BASE}/loan-calculator`, lastModified: now, priority: 0.9 },
     { url: `${BASE}/salary-calculator`, lastModified: now, priority: 0.9 },
+    { url: `${BASE}/inflation-calculator`, lastModified: now, priority: 0.9 },
     { url: `${BASE}/quiz`, lastModified: now, priority: 0.8 },
   ];
 
@@ -112,6 +114,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...salaryScenarios.map((s) => ({
       url: `${BASE}/salary-calculator/${s.slug}`,
+      lastModified: now,
+      priority: 0.7,
+    })),
+    ...inflationPages.map((p) => ({
+      url: `${BASE}/inflation-calculator/${p.slug}`,
       lastModified: now,
       priority: 0.7,
     })),

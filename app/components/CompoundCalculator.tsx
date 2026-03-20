@@ -6,6 +6,7 @@ import {
   calculateCompound,
   formatCurrency,
 } from "../lib/compound-engine";
+import ShareButton from "./ShareButton";
 
 interface Props {
   defaults?: Partial<CompoundInputs>;
@@ -138,6 +139,11 @@ export default function CompoundCalculator({ defaults }: Props) {
 
       {/* Results */}
       <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-xl font-bold text-gray-900">Your Results</h2>
+          <ShareButton title="Compound Interest Calculator" text="Check out this free compound interest calculator!" />
+        </div>
+
         {/* Big number */}
         <div className="text-center mb-8">
           <p className="text-sm text-gray-500 mb-1">

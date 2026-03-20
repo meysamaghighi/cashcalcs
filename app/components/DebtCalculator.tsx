@@ -7,6 +7,7 @@ import {
   formatCurrency,
   formatMonths,
 } from "../lib/debt-engine";
+import ShareButton from "./ShareButton";
 
 let nextId = 1;
 
@@ -203,6 +204,11 @@ export default function DebtCalculator({ prefilledDebts }: Props) {
       {/* Results */}
       {showResults && totalDebt > 0 && (
         <div>
+          <div className="flex items-center justify-between mb-6">
+            <h2 className="text-xl font-bold text-gray-900">Your Results</h2>
+            <ShareButton title="Debt Payoff Calculator" text="Check out this free debt payoff calculator!" />
+          </div>
+
           {/* Summary Cards */}
           <div className="grid md:grid-cols-3 gap-4 mb-8">
             <div className="bg-white rounded-xl shadow-md p-5 text-center">

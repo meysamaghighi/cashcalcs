@@ -6,6 +6,7 @@ import {
   formatCurrency,
   type MortgageInputs,
 } from "../lib/mortgage-engine";
+import ShareButton from "./ShareButton";
 
 export default function MortgageCalculator({
   defaults,
@@ -178,7 +179,10 @@ export default function MortgageCalculator({
 
       {/* Results Card */}
       <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
-        <h2 className="text-xl font-bold text-gray-900 mb-6">Your Monthly Payment</h2>
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-xl font-bold text-gray-900">Your Monthly Payment</h2>
+          <ShareButton title="Mortgage Calculator" text="Check out this free mortgage calculator!" />
+        </div>
 
         {/* Big number */}
         <div className="text-center mb-8">
