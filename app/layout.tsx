@@ -190,6 +190,9 @@ gtag('config', 'G-VY7HQL60ZB');`}
             <p className="text-xs text-gray-400 text-center">
               CashCalcs.com - Free financial calculators. Not financial advice.
             </p>
+            <p className="text-xs text-gray-400 text-center mt-2">
+              <Link href="https://benchmybrain.com" className="hover:text-gray-600">BenchMyBrain</Link> - Free brain &amp; speed tests
+            </p>
           </div>
         </footer>
 
