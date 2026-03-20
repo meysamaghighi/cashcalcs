@@ -40,6 +40,7 @@ const navLinks = [
   { href: "/budget", label: "Budget", color: "hover:text-amber-600" },
   { href: "/loan-calculator", label: "Loans", color: "hover:text-violet-600" },
   { href: "/salary-calculator", label: "Salary", color: "hover:text-cyan-600" },
+  { href: "/investment-calculator", label: "Investment", color: "hover:text-green-600" },
   { href: "/inflation-calculator", label: "Inflation", color: "hover:text-red-600" },
   { href: "/quiz", label: "Quiz", color: "hover:text-emerald-600" },
 ];
@@ -98,7 +99,7 @@ gtag('config', 'G-VY7HQL60ZB');`}
         {/* Footer */}
         <footer className="bg-gray-50 border-t border-gray-100 py-8 mt-12">
           <div className="max-w-5xl mx-auto px-4">
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-12 gap-6 mb-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-5 mb-6">
               <div>
                 <h3 className="font-bold text-gray-900 mb-2 text-sm">Side Hustles</h3>
                 <ul className="space-y-1 text-xs text-gray-500">
@@ -185,6 +186,14 @@ gtag('config', 'G-VY7HQL60ZB');`}
                   <li><Link href="/salary-calculator" className="hover:text-gray-700">Calculator</Link></li>
                   <li><Link href="/salary-calculator/20-an-hour" className="hover:text-gray-700">$20/Hour</Link></li>
                   <li><Link href="/salary-calculator/100k-salary" className="hover:text-gray-700">$100K Salary</Link></li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-bold text-gray-900 mb-2 text-sm">Investment</h3>
+                <ul className="space-y-1 text-xs text-gray-500">
+                  <li><Link href="/investment-calculator" className="hover:text-gray-700">Calculator</Link></li>
+                  <li><Link href="/investment-calculator/sp500-returns" className="hover:text-gray-700">S&P 500</Link></li>
+                  <li><Link href="/investment-calculator/100-per-month" className="hover:text-gray-700">$100/Month</Link></li>
                 </ul>
               </div>
               <div>

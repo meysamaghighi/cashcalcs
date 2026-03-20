@@ -96,6 +96,13 @@ const calculators = [
     stats: "8 wage levels",
   },
   {
+    href: "/investment-calculator",
+    title: "Investment Returns Calculator",
+    desc: "See how your investments grow with compound returns. Stacked charts show contributions vs earnings.",
+    color: "from-green-500 to-green-600",
+    stats: "4 scenarios",
+  },
+  {
     href: "/inflation-calculator",
     title: "Inflation Calculator",
     desc: "See how inflation erodes your purchasing power over time. Find out how much you'll need in the future.",
