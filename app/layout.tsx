@@ -216,6 +216,8 @@ gtag('config', 'G-VY7HQL60ZB');`}
                   <li><Link href="/guides/50-30-20-budget-rule" className="hover:text-gray-700">50/30/20 Rule</Link></li>
                   <li><Link href="/guides/how-to-build-emergency-fund" className="hover:text-gray-700">Emergency Fund</Link></li>
                   <li><Link href="/guides/how-to-pay-off-student-loans" className="hover:text-gray-700">Student Loans</Link></li>
+                  <li><Link href="/guides/how-to-start-investing" className="hover:text-gray-700">Start Investing</Link></li>
+                  <li><Link href="/guides/how-does-inflation-work" className="hover:text-gray-700">Inflation Guide</Link></li>
                 </ul>
               </div>
               <div>
