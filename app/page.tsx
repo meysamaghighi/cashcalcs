@@ -163,7 +163,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="max-w-5xl mx-auto px-4 pb-16">
+      <div id="calculators" className="max-w-5xl mx-auto px-4 pb-16">
         <div className="grid md:grid-cols-2 gap-6">
           {calculators.map((calc) => (
             <Link key={calc.href} href={calc.href} className="group block">

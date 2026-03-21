@@ -29,21 +29,25 @@ export const metadata: Metadata = {
 };
 
 const navLinks = [
-  { href: "/side-hustle", label: "Side Hustle", color: "hover:text-emerald-600" },
-  { href: "/debt-payoff", label: "Debt Payoff", color: "hover:text-blue-600" },
-  { href: "/fire-calculator", label: "FIRE", color: "hover:text-indigo-600" },
+  { href: "/budget", label: "Budget", color: "hover:text-amber-600" },
   { href: "/savings-goal", label: "Savings", color: "hover:text-purple-600" },
-  { href: "/compound-interest", label: "Compound", color: "hover:text-teal-600" },
+  { href: "/debt-payoff", label: "Debt", color: "hover:text-blue-600" },
+  { href: "/investment-calculator", label: "Invest", color: "hover:text-green-600" },
+  { href: "/retirement-calculator", label: "Retire", color: "hover:text-blue-600" },
+  { href: "/tax-calculator", label: "Tax", color: "hover:text-indigo-600" },
+  { href: "/mortgage-calculator", label: "Mortgage", color: "hover:text-sky-600" },
+  { href: "/fire-calculator", label: "FIRE", color: "hover:text-indigo-600" },
+];
+
+const allNavLinks = [
+  ...navLinks,
+  { href: "/side-hustle", label: "Side Hustle", color: "hover:text-emerald-600" },
+  { href: "/compound-interest", label: "Compound Interest", color: "hover:text-teal-600" },
   { href: "/net-worth", label: "Net Worth", color: "hover:text-orange-600" },
   { href: "/subscription-tracker", label: "Subscriptions", color: "hover:text-rose-600" },
-  { href: "/mortgage-calculator", label: "Mortgage", color: "hover:text-sky-600" },
-  { href: "/budget", label: "Budget", color: "hover:text-amber-600" },
   { href: "/loan-calculator", label: "Loans", color: "hover:text-violet-600" },
   { href: "/salary-calculator", label: "Salary", color: "hover:text-cyan-600" },
   { href: "/car-calculator", label: "Car", color: "hover:text-lime-600" },
-  { href: "/retirement-calculator", label: "Retirement", color: "hover:text-blue-600" },
-  { href: "/tax-calculator", label: "Tax", color: "hover:text-indigo-600" },
-  { href: "/investment-calculator", label: "Investment", color: "hover:text-green-600" },
   { href: "/inflation-calculator", label: "Inflation", color: "hover:text-red-600" },
   { href: "/quiz", label: "Quiz", color: "hover:text-emerald-600" },
 ];
@@ -81,7 +85,7 @@ gtag('config', 'G-VY7HQL60ZB');`}
               CashCalcs
             </Link>
             {/* Desktop nav */}
-            <div className="hidden md:flex gap-4 text-sm font-medium text-gray-600">
+            <div className="hidden md:flex gap-4 text-sm font-medium text-gray-600 items-center">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
@@ -91,9 +95,12 @@ gtag('config', 'G-VY7HQL60ZB');`}
                   {link.label}
                 </Link>
               ))}
+              <Link href="/#calculators" className="text-gray-400 hover:text-gray-700 transition-colors">
+                More
+              </Link>
             </div>
             {/* Mobile nav */}
-            <MobileNav links={navLinks} />
+            <MobileNav links={allNavLinks} />
           </div>
         </nav>
 
