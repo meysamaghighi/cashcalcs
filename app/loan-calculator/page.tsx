@@ -182,6 +182,19 @@ export default function LoanCalculatorPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://cashcalcs.com" },
+              { "@type": "ListItem", position: 2, name: "Loan Calculator", item: "https://cashcalcs.com/loan-calculator" },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
             "@type": "WebApplication",
             name: "Loan Calculator",
             description: "Free loan calculator with monthly payment, total interest, and amortization schedule.",

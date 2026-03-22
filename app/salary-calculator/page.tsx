@@ -182,6 +182,19 @@ export default function SalaryCalculatorPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://cashcalcs.com" },
+              { "@type": "ListItem", position: 2, name: "Salary Calculator", item: "https://cashcalcs.com/salary-calculator" },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
             "@type": "WebApplication",
             name: "Salary Calculator",
             description: "Free salary calculator: convert between hourly, weekly, biweekly, monthly, and annual pay.",

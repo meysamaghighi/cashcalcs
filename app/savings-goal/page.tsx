@@ -5,9 +5,9 @@ import { savingsGoals } from "../lib/savings-engine";
 import RelatedCalculators from "../components/RelatedCalculators";
 
 export const metadata: Metadata = {
-  title: "Savings Goal Calculator | CashCalcs",
+  title: "Savings Goal Calculator - Plan Any Goal with Compound Interest | CashCalcs",
   description:
-    "Free savings goal calculator with compound interest. Plan for emergency fund, house, vacation, car, wedding, or retirement.",
+    "Free savings goal calculator. Calculate how long to reach any savings goal with compound interest. Plan emergency fund, house down payment, vacation, or any financial target in 2026.",
   keywords: [
     "savings goal calculator",
     "savings calculator",
@@ -115,6 +115,19 @@ export default function SavingsGoalPage() {
         </div>
       </section>
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://cashcalcs.com" },
+              { "@type": "ListItem", position: 2, name: "Savings Goal Calculator", item: "https://cashcalcs.com/savings-goal" },
+            ],
+          }),
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

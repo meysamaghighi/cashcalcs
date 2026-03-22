@@ -167,6 +167,19 @@ export default function CompoundInterestPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://cashcalcs.com" },
+              { "@type": "ListItem", position: 2, name: "Compound Interest Calculator", item: "https://cashcalcs.com/compound-interest" },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
             "@type": "WebApplication",
             name: "Compound Interest Calculator",
             description: "Free compound interest calculator with interactive charts.",

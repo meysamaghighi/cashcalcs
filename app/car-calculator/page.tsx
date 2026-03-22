@@ -160,6 +160,19 @@ export default function CarCalculatorPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://cashcalcs.com" },
+              { "@type": "ListItem", position: 2, name: "Car Affordability Calculator", item: "https://cashcalcs.com/car-calculator" },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
             "@type": "WebApplication",
             name: "Car Affordability Calculator",
             description: "Free car affordability calculator with monthly payment, insurance, and gas cost breakdown.",

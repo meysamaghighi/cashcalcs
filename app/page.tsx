@@ -218,18 +218,84 @@ export default function Home() {
         </h2>
         <div className="text-gray-700 leading-relaxed space-y-4">
           <p>
-            CashCalcs brings together the financial calculators you actually need
-            in one place. Whether you are figuring out how to pay off credit card
-            debt, planning for early retirement, saving for a house, or looking
-            for ways to earn extra income, we have a tool for you.
+            CashCalcs brings together 16 essential financial calculators you need
+            to take control of your money. Whether you are paying off debt, building
+            savings, planning retirement, or looking for ways to increase income,
+            we have a free calculator designed for your specific goal.
           </p>
           <p>
-            Each calculator is built with real-world data and actionable advice.
-            Our side hustle calculator includes 30+ opportunities with real
-            hourly rates. Our debt payoff calculator compares avalanche and
-            snowball strategies with exact interest savings. Our FIRE calculator
-            shows your path to financial independence with multiple strategies.
+            Start with our <Link href="/budget" className="text-emerald-600 hover:underline font-medium">50/30/20 budget calculator</Link> to
+            create a spending plan. Use the <Link href="/debt-payoff" className="text-blue-600 hover:underline font-medium">debt payoff calculator</Link> to
+            compare avalanche vs snowball methods and see your debt-free date. Planning for financial independence? Our <Link href="/fire-calculator" className="text-indigo-600 hover:underline font-medium">FIRE calculator</Link> shows
+            exactly when you can retire based on your savings rate. Looking for extra income? The <Link href="/side-hustle" className="text-emerald-600 hover:underline font-medium">side hustle calculator</Link> matches
+            30+ opportunities to your skills and available time.
           </p>
+          <p>
+            Every calculator runs in your browser with zero data collection. No sign-up, no premium tiers, no hidden fees. Just
+            free financial tools that help you make better money decisions in 2026.
+          </p>
+        </div>
+      </section>
+
+      <section className="max-w-4xl mx-auto px-4 pb-16">
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Popular Financial Calculators</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
+            <h3 className="text-lg font-bold text-gray-900 mb-3">Debt & Loans</h3>
+            <ul className="space-y-2 text-gray-700">
+              <li>
+                <Link href="/debt-payoff" className="text-blue-600 hover:underline font-medium">Debt Payoff Calculator</Link> - Compare avalanche vs snowball strategies
+              </li>
+              <li>
+                <Link href="/loan-calculator" className="text-violet-600 hover:underline font-medium">Loan Calculator</Link> - Calculate monthly payments for any loan
+              </li>
+              <li>
+                <Link href="/mortgage-calculator" className="text-sky-600 hover:underline font-medium">Mortgage Calculator</Link> - Monthly payment with taxes, insurance, and PMI
+              </li>
+            </ul>
+          </div>
+          <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
+            <h3 className="text-lg font-bold text-gray-900 mb-3">Savings & Investments</h3>
+            <ul className="space-y-2 text-gray-700">
+              <li>
+                <Link href="/savings-goal" className="text-purple-600 hover:underline font-medium">Savings Goal Calculator</Link> - Plan any goal with compound interest
+              </li>
+              <li>
+                <Link href="/compound-interest" className="text-teal-600 hover:underline font-medium">Compound Interest Calculator</Link> - See how investments grow over time
+              </li>
+              <li>
+                <Link href="/investment-calculator" className="text-green-600 hover:underline font-medium">Investment Calculator</Link> - Calculate returns with contributions
+              </li>
+            </ul>
+          </div>
+          <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
+            <h3 className="text-lg font-bold text-gray-900 mb-3">Retirement & FIRE</h3>
+            <ul className="space-y-2 text-gray-700">
+              <li>
+                <Link href="/fire-calculator" className="text-indigo-600 hover:underline font-medium">FIRE Calculator</Link> - Find your financial independence date
+              </li>
+              <li>
+                <Link href="/retirement-calculator" className="text-blue-600 hover:underline font-medium">Retirement Calculator</Link> - See if you're on track to retire
+              </li>
+              <li>
+                <Link href="/inflation-calculator" className="text-red-600 hover:underline font-medium">Inflation Calculator</Link> - Plan for rising costs in retirement
+              </li>
+            </ul>
+          </div>
+          <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
+            <h3 className="text-lg font-bold text-gray-900 mb-3">Income & Budgeting</h3>
+            <ul className="space-y-2 text-gray-700">
+              <li>
+                <Link href="/budget" className="text-amber-600 hover:underline font-medium">Budget Calculator</Link> - Create a 50/30/20 budget for your income
+              </li>
+              <li>
+                <Link href="/salary-calculator" className="text-cyan-600 hover:underline font-medium">Salary Calculator</Link> - Convert between hourly and annual pay
+              </li>
+              <li>
+                <Link href="/tax-calculator" className="text-indigo-600 hover:underline font-medium">Tax Calculator 2026</Link> - Estimate federal and state income taxes
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 

@@ -7,7 +7,7 @@ import RelatedCalculators from "../components/RelatedCalculators";
 export const metadata: Metadata = {
   title: "Side Hustle Calculator - Best Side Hustles 2026 | CashCalcs",
   description:
-    "Free side hustle calculator. Get personalized recommendations based on your hours and skills. 30+ side hustles with earnings.",
+    "Find the best side hustle for your skills and schedule. Free calculator with 30+ side hustles, real earnings estimates, and personalized recommendations to make extra money in 2026.",
   keywords: [
     "side hustle",
     "side hustle calculator",
@@ -158,6 +158,19 @@ export default function SideHustlePage() {
         </div>
       </section>
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://cashcalcs.com" },
+              { "@type": "ListItem", position: 2, name: "Side Hustle Calculator", item: "https://cashcalcs.com/side-hustle" },
+            ],
+          }),
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
