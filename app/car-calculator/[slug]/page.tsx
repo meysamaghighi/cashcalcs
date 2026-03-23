@@ -6,6 +6,7 @@ import {
   getCarScenario,
 } from "../../lib/car-engine";
 import CarCalculator from "../../components/CarCalculator";
+import RelatedCalculators from "../../components/RelatedCalculators";
 
 export function generateStaticParams() {
   return carScenarios.map((s) => ({ slug: s.slug }));
@@ -85,6 +86,8 @@ export default async function ScenarioPage({
             Back to Car Calculator
           </Link>
         </div>
+
+        <RelatedCalculators current="/car-calculator" />
       </div>
 
       <script
@@ -99,6 +102,20 @@ export default async function ScenarioPage({
             applicationCategory: "FinanceApplication",
             operatingSystem: "Any",
             offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "CashCalcs", item: "https://cashcalcs.com" },
+              { "@type": "ListItem", position: 2, name: "Car Calculator", item: "https://cashcalcs.com/car-calculator" },
+              { "@type": "ListItem", position: 3, name: scenario.name },
+            ],
           }),
         }}
       />

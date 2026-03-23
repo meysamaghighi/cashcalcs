@@ -280,6 +280,21 @@ export default function StudentLoanGuide() {
           }),
         }}
       />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "CashCalcs", item: "https://cashcalcs.com" },
+              { "@type": "ListItem", position: 2, name: "Guides", item: "https://cashcalcs.com/guides" },
+              { "@type": "ListItem", position: 3, name: "How to Pay Off Student Loans" },
+            ],
+          }),
+        }}
+      />
     </main>
   );
 }

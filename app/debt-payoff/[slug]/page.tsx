@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { debtTypes, getDebtTypeBySlug, formatCurrency } from "../../lib/debt-engine";
 import DebtCalculator from "../../components/DebtCalculator";
+import RelatedCalculators from "../../components/RelatedCalculators";
 
 export function generateStaticParams() {
   return debtTypes.map((dt) => ({ slug: dt.slug }));
@@ -87,6 +88,8 @@ export default async function DebtTypePage({
             Back to Debt Payoff Calculator
           </Link>
         </div>
+
+        <RelatedCalculators current="/debt-payoff" />
       </div>
 
       <script
@@ -101,6 +104,20 @@ export default async function DebtTypePage({
             applicationCategory: "FinanceApplication",
             operatingSystem: "Any",
             offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "CashCalcs", item: "https://cashcalcs.com" },
+              { "@type": "ListItem", position: 2, name: "Debt Payoff Calculator", item: "https://cashcalcs.com/debt-payoff" },
+              { "@type": "ListItem", position: 3, name: dt.name },
+            ],
           }),
         }}
       />

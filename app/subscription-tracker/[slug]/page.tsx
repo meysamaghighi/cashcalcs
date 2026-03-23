@@ -6,6 +6,7 @@ import {
   getPresetBySlug,
 } from "../../lib/subscription-engine";
 import SubscriptionCalculator from "../../components/SubscriptionCalculator";
+import RelatedCalculators from "../../components/RelatedCalculators";
 
 export function generateStaticParams() {
   return subscriptionPresets.map((p) => ({ slug: p.slug }));
@@ -85,6 +86,8 @@ export default async function PresetPage({
             Back to Subscription Tracker
           </Link>
         </div>
+
+        <RelatedCalculators current="/subscription-tracker" />
       </div>
 
       <script
@@ -99,6 +102,20 @@ export default async function PresetPage({
             applicationCategory: "FinanceApplication",
             operatingSystem: "Any",
             offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "CashCalcs", item: "https://cashcalcs.com" },
+              { "@type": "ListItem", position: 2, name: "Subscription Tracker", item: "https://cashcalcs.com/subscription-tracker" },
+              { "@type": "ListItem", position: 3, name: preset.name },
+            ],
           }),
         }}
       />

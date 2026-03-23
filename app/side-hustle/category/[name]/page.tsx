@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { sideHustles, getAllCategories } from "../../../lib/side-hustles";
+import RelatedCalculators from "../../../components/RelatedCalculators";
 
 const categorySlug = (cat: string) => cat.toLowerCase().replace(/\s+/g, "-");
 
@@ -105,7 +106,26 @@ export default async function CategoryPage({
             Back to Side Hustle Calculator
           </Link>
         </div>
+
+        <div className="mt-8">
+          <RelatedCalculators current="/side-hustle" />
+        </div>
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "CashCalcs", item: "https://cashcalcs.com" },
+              { "@type": "ListItem", position: 2, name: "Side Hustles", item: "https://cashcalcs.com/side-hustle" },
+              { "@type": "ListItem", position: 3, name: category },
+            ],
+          }),
+        }}
+      />
     </main>
   );
 }

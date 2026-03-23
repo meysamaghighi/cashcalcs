@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import SavingsCalculator from "../../components/SavingsCalculator";
 import { savingsGoals, getGoalBySlug, formatCurrency } from "../../lib/savings-engine";
+import RelatedCalculators from "../../components/RelatedCalculators";
 
 export function generateStaticParams() {
   return savingsGoals.map((g) => ({ slug: g.slug }));
@@ -94,6 +95,10 @@ export default async function GoalPage({
         </div>
       </section>
 
+      <div className="max-w-4xl mx-auto px-4 pb-16">
+        <RelatedCalculators current="/savings-goal" />
+      </div>
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -106,6 +111,20 @@ export default async function GoalPage({
             applicationCategory: "FinanceApplication",
             operatingSystem: "Any",
             offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "CashCalcs", item: "https://cashcalcs.com" },
+              { "@type": "ListItem", position: 2, name: "Savings Goal Calculator", item: "https://cashcalcs.com/savings-goal" },
+              { "@type": "ListItem", position: 3, name: goal.name },
+            ],
           }),
         }}
       />

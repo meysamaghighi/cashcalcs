@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { budgetScenarios, getScenarioBySlug } from "../../lib/budget-engine";
 import BudgetCalculator from "../../components/BudgetCalculator";
+import RelatedCalculators from "../../components/RelatedCalculators";
 
 export function generateStaticParams() {
   return budgetScenarios.map((s) => ({ slug: s.slug }));
@@ -79,6 +80,8 @@ export default async function ScenarioPage({
             Back to Budget Calculator
           </Link>
         </div>
+
+        <RelatedCalculators current="/budget" />
       </div>
 
       <script
@@ -93,6 +96,20 @@ export default async function ScenarioPage({
             applicationCategory: "FinanceApplication",
             operatingSystem: "Any",
             offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "CashCalcs", item: "https://cashcalcs.com" },
+              { "@type": "ListItem", position: 2, name: "Budget Calculator", item: "https://cashcalcs.com/budget" },
+              { "@type": "ListItem", position: 3, name: scenario.name },
+            ],
           }),
         }}
       />

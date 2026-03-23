@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import InvestmentCalculator from "../../components/InvestmentCalculator";
 import { investmentScenarios, getInvestmentScenario } from "../../lib/investment-engine";
+import RelatedCalculators from "../../components/RelatedCalculators";
 
 export function generateStaticParams() {
   return investmentScenarios.map((s) => ({ slug: s.slug }));
@@ -76,6 +77,40 @@ export default async function InvestmentSubPage({
           </div>
         </section>
       )}
+
+      <div className="max-w-4xl mx-auto px-4 pb-16">
+        <RelatedCalculators current="/investment-calculator" />
+      </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            name: `${scenario.name} Calculator`,
+            description: scenario.seoDescription,
+            url: `https://cashcalcs.com/investment-calculator/${scenario.slug}`,
+            applicationCategory: "FinanceApplication",
+            operatingSystem: "Any",
+            offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "CashCalcs", item: "https://cashcalcs.com" },
+              { "@type": "ListItem", position: 2, name: "Investment Calculator", item: "https://cashcalcs.com/investment-calculator" },
+              { "@type": "ListItem", position: 3, name: scenario.name },
+            ],
+          }),
+        }}
+      />
     </main>
   );
 }

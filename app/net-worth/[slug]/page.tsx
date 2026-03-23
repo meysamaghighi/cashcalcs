@@ -6,6 +6,7 @@ import {
   getScenarioBySlug,
 } from "../../lib/networth-engine";
 import NetWorthCalculator from "../../components/NetWorthCalculator";
+import RelatedCalculators from "../../components/RelatedCalculators";
 
 export function generateStaticParams() {
   return networthScenarios.map((s) => ({ slug: s.slug }));
@@ -88,6 +89,8 @@ export default async function ScenarioPage({
             Back to Net Worth Calculator
           </Link>
         </div>
+
+        <RelatedCalculators current="/net-worth" />
       </div>
 
       <script
@@ -102,6 +105,20 @@ export default async function ScenarioPage({
             applicationCategory: "FinanceApplication",
             operatingSystem: "Any",
             offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "CashCalcs", item: "https://cashcalcs.com" },
+              { "@type": "ListItem", position: 2, name: "Net Worth Calculator", item: "https://cashcalcs.com/net-worth" },
+              { "@type": "ListItem", position: 3, name: scenario.name },
+            ],
           }),
         }}
       />

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import RetirementCalculator from "../../components/RetirementCalculator";
 import { retirementScenarios, getRetirementScenario } from "../../lib/retirement-engine";
+import RelatedCalculators from "../../components/RelatedCalculators";
 
 export function generateStaticParams() {
   return retirementScenarios.map((s) => ({ slug: s.slug }));
@@ -101,6 +102,10 @@ export default async function ScenarioPage({
         </div>
       </section>
 
+      <div className="max-w-4xl mx-auto px-4 pb-16">
+        <RelatedCalculators current="/retirement-calculator" />
+      </div>
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -113,6 +118,20 @@ export default async function ScenarioPage({
             applicationCategory: "FinanceApplication",
             operatingSystem: "Any",
             offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "CashCalcs", item: "https://cashcalcs.com" },
+              { "@type": "ListItem", position: 2, name: "Retirement Calculator", item: "https://cashcalcs.com/retirement-calculator" },
+              { "@type": "ListItem", position: 3, name: scenario.name },
+            ],
           }),
         }}
       />

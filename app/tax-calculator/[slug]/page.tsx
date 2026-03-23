@@ -6,6 +6,7 @@ import {
   getTaxScenario,
 } from "../../lib/tax-engine";
 import TaxCalculator from "../../components/TaxCalculator";
+import RelatedCalculators from "../../components/RelatedCalculators";
 
 export function generateStaticParams() {
   return taxScenarios.map((s) => ({ slug: s.slug }));
@@ -85,6 +86,8 @@ export default async function ScenarioPage({
             Back to Tax Calculator
           </Link>
         </div>
+
+        <RelatedCalculators current="/tax-calculator" />
       </div>
 
       <script
@@ -99,6 +102,20 @@ export default async function ScenarioPage({
             applicationCategory: "FinanceApplication",
             operatingSystem: "Any",
             offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "CashCalcs", item: "https://cashcalcs.com" },
+              { "@type": "ListItem", position: 2, name: "Tax Calculator", item: "https://cashcalcs.com/tax-calculator" },
+              { "@type": "ListItem", position: 3, name: scenario.name },
+            ],
           }),
         }}
       />

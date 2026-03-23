@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { sideHustles, getHustleBySlug, getHustlesByCategory } from "../../lib/side-hustles";
+import RelatedCalculators from "../../components/RelatedCalculators";
 
 export function generateStaticParams() {
   return sideHustles.map((h) => ({ slug: h.slug }));
@@ -155,6 +156,8 @@ export default async function HustlePage({
             Back to Side Hustle Calculator
           </Link>
         </div>
+
+        <RelatedCalculators current="/side-hustle" />
       </div>
 
       <script
@@ -169,6 +172,20 @@ export default async function HustlePage({
             applicationCategory: "FinanceApplication",
             operatingSystem: "Any",
             offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "CashCalcs", item: "https://cashcalcs.com" },
+              { "@type": "ListItem", position: 2, name: "Side Hustle Calculator", item: "https://cashcalcs.com/side-hustle" },
+              { "@type": "ListItem", position: 3, name: hustle.name },
+            ],
           }),
         }}
       />
