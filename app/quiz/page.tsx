@@ -121,6 +121,19 @@ export default function QuizPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://cashcalcs.com" },
+              { "@type": "ListItem", position: 2, name: "Financial Health Quiz", item: "https://cashcalcs.com/quiz" },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
             "@type": "WebApplication",
             name: "Financial Health Quiz",
             description:

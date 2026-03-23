@@ -241,7 +241,9 @@ gtag('config', 'G-VY7HQL60ZB');`}
             </div>
             <div className="flex justify-center gap-6 mb-6 text-xs text-gray-500">
               <div>
-                <h3 className="font-bold text-gray-900 mb-2 text-sm">Guides</h3>
+                <h3 className="font-bold text-gray-900 mb-2 text-sm">
+                  <Link href="/guides" className="hover:text-emerald-600">Guides</Link>
+                </h3>
                 <ul className="space-y-1">
                   <li><Link href="/guides/how-to-calculate-net-worth" className="hover:text-gray-700">Net Worth Guide</Link></li>
                   <li><Link href="/guides/debt-avalanche-vs-snowball" className="hover:text-gray-700">Avalanche vs Snowball</Link></li>

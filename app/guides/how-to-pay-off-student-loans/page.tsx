@@ -67,7 +67,8 @@ export default function StudentLoanGuide() {
             Strategy 1: Make Extra Payments
           </h2>
           <p className="text-gray-700 mb-4">
-            The simplest and most effective approach. Even small extra payments
+            The simplest and most effective approach. Use the <Link href="/debt-payoff" className="text-blue-600 hover:underline font-medium">debt payoff calculator</Link> to
+            see exactly how much extra payments save. Even small extra payments
             compound over time:
           </p>
           <div className="overflow-x-auto mb-4">

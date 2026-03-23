@@ -165,11 +165,11 @@ export default function WhatIsFireGuide() {
             How to Get Started
           </h2>
           <ol className="list-decimal list-inside space-y-3 text-gray-700">
-            <li><strong>Track your spending.</strong> You cannot optimize what you do not measure. Know exactly where every dollar goes for at least one month.</li>
-            <li><strong>Calculate your FIRE number.</strong> Annual expenses times 25 (using the 4% rule). This is your target portfolio size.</li>
+            <li><strong>Track your spending.</strong> Use the <Link href="/budget" className="text-amber-600 hover:underline font-medium">50/30/20 budget calculator</Link> to optimize what you measure. Know exactly where every dollar goes for at least one month.</li>
+            <li><strong>Calculate your FIRE number.</strong> Use the <Link href="/fire-calculator" className="text-indigo-600 hover:underline font-medium">FIRE calculator</Link> to find your target. Annual expenses times 25 (using the 4% rule) is your target portfolio size.</li>
             <li><strong>Maximize your savings rate.</strong> Cut the big three: housing (downsize or house hack), transportation (buy used or go car-free), and food (cook at home).</li>
-            <li><strong>Invest consistently.</strong> Put savings into low-cost index funds (like VTSAX or VTI). Automate monthly contributions.</li>
-            <li><strong>Increase income.</strong> Negotiate raises, switch jobs, start a side hustle. Every extra dollar saved accelerates your timeline.</li>
+            <li><strong>Invest consistently.</strong> Put savings into low-cost index funds (like VTSAX or VTI). Use the <Link href="/investment-calculator" className="text-green-600 hover:underline font-medium">investment calculator</Link> to project growth with monthly contributions.</li>
+            <li><strong>Increase income.</strong> Negotiate raises, switch jobs, or explore <Link href="/side-hustle" className="text-emerald-600 hover:underline font-medium">side hustles</Link>. Every extra dollar saved accelerates your timeline.</li>
             <li><strong>Stay the course.</strong> The hardest part is maintaining discipline over 10-20 years. The math works — trust the process.</li>
           </ol>
         </section>

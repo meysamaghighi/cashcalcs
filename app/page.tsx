@@ -299,6 +299,50 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="max-w-4xl mx-auto px-4 pb-16">
+        <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+          Financial Guides & Tutorials
+        </h2>
+        <div className="bg-gradient-to-r from-emerald-50 to-blue-50 border border-emerald-200 rounded-2xl p-8 text-center mb-16">
+          <h3 className="text-xl font-bold text-gray-900 mb-3">
+            Learn Personal Finance from Scratch
+          </h3>
+          <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
+            9 comprehensive guides covering debt payoff strategies, budgeting, emergency funds, the FIRE movement, investing, mortgages, and more. All free, no sign-up required.
+          </p>
+          <Link
+            href="/guides"
+            className="inline-block px-8 py-3 bg-emerald-600 text-white font-bold rounded-xl hover:bg-emerald-700 transition-colors"
+          >
+            Browse All Guides
+          </Link>
+        </div>
+      </section>
+
+      <section className="max-w-4xl mx-auto px-4 pb-16">
+        <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+          Frequently Asked Questions
+        </h2>
+        <div className="space-y-4">
+          <div className="bg-white rounded-xl shadow-sm p-6">
+            <h3 className="font-bold text-gray-900 mb-2">Are these calculators really free?</h3>
+            <p className="text-gray-700 text-sm">Yes, 100% free forever. No sign-up, no premium tiers, no hidden fees. All 16 calculators are completely free to use.</p>
+          </div>
+          <div className="bg-white rounded-xl shadow-sm p-6">
+            <h3 className="font-bold text-gray-900 mb-2">Do you store my financial data?</h3>
+            <p className="text-gray-700 text-sm">No. All calculations run in your browser. We never see or store your financial information. Your data never leaves your device.</p>
+          </div>
+          <div className="bg-white rounded-xl shadow-sm p-6">
+            <h3 className="font-bold text-gray-900 mb-2">Which calculator should I use first?</h3>
+            <p className="text-gray-700 text-sm">Start with the 50/30/20 budget calculator to understand your income allocation. Then use the debt payoff calculator if you have high-interest debt, or the savings goal calculator to plan your emergency fund.</p>
+          </div>
+          <div className="bg-white rounded-xl shadow-sm p-6">
+            <h3 className="font-bold text-gray-900 mb-2">How accurate are these calculators?</h3>
+            <p className="text-gray-700 text-sm">Our calculators use standard financial formulas and up-to-date tax brackets (2026). However, they provide estimates and are not substitutes for professional financial advice. Always consult a financial advisor for personalized guidance.</p>
+          </div>
+        </div>
+      </section>
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -309,6 +353,37 @@ export default function Home() {
             description:
               "Free financial calculators: savings goals, debt payoff, FIRE calculator, and side hustle earnings.",
             url: "https://cashcalcs.com",
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "Are these calculators really free?",
+                acceptedAnswer: { "@type": "Answer", text: "Yes, 100% free forever. No sign-up, no premium tiers, no hidden fees. All 16 calculators are completely free to use." },
+              },
+              {
+                "@type": "Question",
+                name: "Do you store my financial data?",
+                acceptedAnswer: { "@type": "Answer", text: "No. All calculations run in your browser. We never see or store your financial information. Your data never leaves your device." },
+              },
+              {
+                "@type": "Question",
+                name: "Which calculator should I use first?",
+                acceptedAnswer: { "@type": "Answer", text: "Start with the 50/30/20 budget calculator to understand your income allocation. Then use the debt payoff calculator if you have high-interest debt, or the savings goal calculator to plan your emergency fund." },
+              },
+              {
+                "@type": "Question",
+                name: "How accurate are these calculators?",
+                acceptedAnswer: { "@type": "Answer", text: "Our calculators use standard financial formulas and up-to-date tax brackets (2026). However, they provide estimates and are not substitutes for professional financial advice." },
+              },
+            ],
           }),
         }}
       />

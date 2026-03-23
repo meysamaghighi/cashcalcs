@@ -168,7 +168,8 @@ export default function EmergencyFundGuide() {
           </h2>
           <p className="text-gray-700 mb-4">
             If your target is $15,000 (5 months of $3,000 expenses), here is how
-            long it takes at different savings rates:
+            long it takes at different savings rates. Use the <Link href="/savings-goal" className="text-purple-600 hover:underline font-medium">savings goal calculator</Link> to
+            plan your exact timeline:
           </p>
           <div className="overflow-x-auto">
             <table className="w-full bg-white rounded-xl shadow-sm text-sm">
@@ -208,8 +209,8 @@ export default function EmergencyFundGuide() {
           </p>
           <ol className="list-decimal pl-6 text-gray-700 space-y-2 mb-4">
             <li>Build a <strong>$1,000 starter emergency fund</strong> first</li>
-            <li>Aggressively pay off high-interest debt (credit cards at 20%+)</li>
-            <li>Build your full 3-6 month emergency fund</li>
+            <li>Aggressively pay off high-interest debt (credit cards at 20%+) using the <Link href="/debt-payoff" className="text-blue-600 hover:underline font-medium">debt payoff calculator</Link></li>
+            <li>Build your full 3-6 month emergency fund with the <Link href="/savings-goal/emergency-fund" className="text-purple-600 hover:underline font-medium">savings goal calculator</Link></li>
             <li>Continue paying off remaining debt while investing</li>
           </ol>
           <p className="text-gray-700">

@@ -152,10 +152,10 @@ export default function BudgetRuleGuide() {
               </p>
               <ul className="space-y-2 list-disc list-inside">
                 <li><strong>High cost of living:</strong> In cities like San Francisco or New York, needs may take 55-65% of income. Cut wants to compensate but protect the 20% savings.</li>
-                <li><strong>Aggressive debt payoff:</strong> Switch to 50/20/30 where 30% goes to debt elimination. Once debt-free, move to a high savings rate.</li>
-                <li><strong>FIRE goals:</strong> Early retirement seekers often use 30/10/60 or 40/10/50 splits. A 50%+ savings rate lets you retire in 15-17 years.</li>
-                <li><strong>Low income:</strong> If 50% does not cover needs, focus on increasing income (side hustles, skill building) while saving even a small amount consistently.</li>
-                <li><strong>High income:</strong> Earning $150K+ means you do not need 30% for wants. Shift to 40/15/45 and accelerate wealth building.</li>
+                <li><strong>Aggressive debt payoff:</strong> Switch to 50/20/30 where 30% goes to debt elimination using the <Link href="/debt-payoff" className="text-blue-600 hover:underline font-medium">debt payoff calculator</Link>. Once debt-free, move to a high savings rate.</li>
+                <li><strong>FIRE goals:</strong> Early retirement seekers often use 30/10/60 or 40/10/50 splits. Use the <Link href="/fire-calculator" className="text-indigo-600 hover:underline font-medium">FIRE calculator</Link> to see how a 50%+ savings rate lets you retire in 15-17 years.</li>
+                <li><strong>Low income:</strong> If 50% does not cover needs, focus on increasing income with <Link href="/side-hustle" className="text-emerald-600 hover:underline font-medium">side hustles</Link> or skill building while saving even a small amount consistently.</li>
+                <li><strong>High income:</strong> Earning $150K+ means you do not need 30% for wants. Shift to 40/15/45 and accelerate wealth building with the <Link href="/investment-calculator" className="text-green-600 hover:underline font-medium">investment calculator</Link>.</li>
               </ul>
             </div>
           </section>

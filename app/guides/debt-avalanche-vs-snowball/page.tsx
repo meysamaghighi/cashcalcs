@@ -167,9 +167,9 @@ export default function DebtAvalancheVsSnowball() {
             <ul className="text-gray-700 space-y-2">
               <li><strong>Always pay minimums on all debts.</strong> Missing payments hurts your credit score and triggers late fees.</li>
               <li><strong>Automate your payments.</strong> Set up auto-pay for minimums so you never miss one.</li>
-              <li><strong>Throw windfalls at debt.</strong> Tax refunds, bonuses, and side hustle income should go straight to your target debt.</li>
+              <li><strong>Throw windfalls at debt.</strong> Tax refunds, bonuses, and <Link href="/side-hustle" className="text-emerald-600 hover:underline font-medium">side hustle income</Link> should go straight to your target debt.</li>
               <li><strong>Do not add new debt.</strong> Cut up the credit cards or freeze them (literally, in ice) while paying off existing balances.</li>
-              <li><strong>Track your progress.</strong> Use our calculator to see your debt-free date and watch it get closer each month.</li>
+              <li><strong>Track your progress.</strong> Use the <Link href="/budget" className="text-amber-600 hover:underline font-medium">budget calculator</Link> to free up extra payments, and our <Link href="/debt-payoff" className="text-blue-600 hover:underline font-medium">debt calculator</Link> to see your debt-free date get closer each month.</li>
             </ul>
           </section>
 

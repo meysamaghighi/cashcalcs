@@ -138,7 +138,8 @@ export default function HowMuchHouseGuide() {
               <p>
                 Car payments, student loans, and credit card minimums reduce
                 your borrowing power. A $500/month car payment reduces the home
-                you can afford by roughly $70,000-80,000.
+                you can afford by roughly $70,000-80,000. Use the <Link href="/debt-payoff" className="text-blue-600 hover:underline font-medium">debt payoff calculator</Link> to
+                eliminate high-interest debt before applying for a mortgage.
               </p>
             </div>
             <div>
