@@ -3,6 +3,7 @@ import Link from "next/link";
 import FireCalculator from "../components/FireCalculator";
 import { fireScenarios } from "../lib/fire-engine";
 import RelatedCalculators from "../components/RelatedCalculators";
+import RelatedGuides from "../components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "FIRE Calculator - When Can You Retire? | CashCalcs",
@@ -91,6 +92,8 @@ export default function FirePage() {
       </section>
 
       <RelatedCalculators current="/fire-calculator" />
+
+      <RelatedGuides current="/fire-calculator" />
 
       <section className="max-w-4xl mx-auto px-4 pb-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">

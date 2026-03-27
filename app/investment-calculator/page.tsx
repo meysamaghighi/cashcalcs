@@ -3,6 +3,7 @@ import Link from "next/link";
 import InvestmentCalculator from "../components/InvestmentCalculator";
 import { investmentScenarios } from "../lib/investment-engine";
 import RelatedCalculators from "../components/RelatedCalculators";
+import RelatedGuides from "../components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "Investment Returns Calculator - How Much Will My Investments Grow? | CashCalcs",
@@ -115,6 +116,8 @@ export default function InvestmentPage() {
       </section>
 
       <RelatedCalculators current="/investment-calculator" />
+
+      <RelatedGuides current="/investment-calculator" />
 
       {/* FAQ */}
       <section className="max-w-4xl mx-auto px-4 pb-16">

@@ -3,6 +3,7 @@ import Link from "next/link";
 import MortgageCalculator from "../components/MortgageCalculator";
 import { mortgageScenarios } from "../lib/mortgage-engine";
 import RelatedCalculators from "../components/RelatedCalculators";
+import RelatedGuides from "../components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "Mortgage Calculator - Monthly Payment & Amortization | CashCalcs",
@@ -118,6 +119,8 @@ export default function MortgageCalculatorPage() {
       </section>
 
       <RelatedCalculators current="/mortgage-calculator" />
+
+      <RelatedGuides current="/mortgage-calculator" />
 
       <section className="max-w-4xl mx-auto px-4 pb-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">

@@ -3,6 +3,7 @@ import Link from "next/link";
 import DebtCalculator from "../components/DebtCalculator";
 import { debtTypes } from "../lib/debt-engine";
 import RelatedCalculators from "../components/RelatedCalculators";
+import RelatedGuides from "../components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "Debt Payoff Calculator - Avalanche vs Snowball | CashCalcs",
@@ -100,6 +101,8 @@ export default function DebtPayoffPage() {
       </section>
 
       <RelatedCalculators current="/debt-payoff" />
+
+      <RelatedGuides current="/debt-payoff" />
 
       <section className="max-w-4xl mx-auto px-4 pb-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">

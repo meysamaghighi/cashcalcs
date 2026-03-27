@@ -3,6 +3,7 @@ import Link from "next/link";
 import LoanCalculator from "../components/LoanCalculator";
 import { loanScenarios } from "../lib/loan-engine";
 import RelatedCalculators from "../components/RelatedCalculators";
+import RelatedGuides from "../components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "Loan Calculator - Monthly Payment & Amortization | CashCalcs",
@@ -156,6 +157,8 @@ export default function LoanCalculatorPage() {
       </section>
 
       <RelatedCalculators current="/loan-calculator" />
+
+      <RelatedGuides current="/loan-calculator" />
 
       <section className="max-w-4xl mx-auto px-4 pb-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">

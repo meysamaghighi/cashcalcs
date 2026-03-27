@@ -95,6 +95,13 @@ const guides = [
     category: "Taxes & Income",
     color: "bg-blue-600",
   },
+  {
+    slug: "sp500-investment-calculator",
+    title: "S&P 500 Investment Returns Calculator",
+    desc: "How much would $10K, $50K, or $100K invested in the S&P 500 grow to over 10, 20, 30 years? Historical returns and compound growth tables.",
+    category: "Investing",
+    color: "bg-green-600",
+  },
 ];
 
 export default function GuidesHub() {

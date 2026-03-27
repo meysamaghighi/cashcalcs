@@ -3,6 +3,7 @@ import Link from "next/link";
 import SavingsCalculator from "../components/SavingsCalculator";
 import { savingsGoals } from "../lib/savings-engine";
 import RelatedCalculators from "../components/RelatedCalculators";
+import RelatedGuides from "../components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "Savings Goal Calculator - Plan Any Goal with Compound Interest | CashCalcs",
@@ -94,6 +95,8 @@ export default function SavingsGoalPage() {
       </section>
 
       <RelatedCalculators current="/savings-goal" />
+
+      <RelatedGuides current="/savings-goal" />
 
       <section className="max-w-4xl mx-auto px-4 pb-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">

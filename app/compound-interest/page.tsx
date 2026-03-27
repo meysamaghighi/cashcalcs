@@ -3,6 +3,7 @@ import Link from "next/link";
 import CompoundCalculator from "../components/CompoundCalculator";
 import { compoundScenarios } from "../lib/compound-engine";
 import RelatedCalculators from "../components/RelatedCalculators";
+import RelatedGuides from "../components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "Compound Interest Calculator - See Your Money Grow | CashCalcs",
@@ -141,6 +142,8 @@ export default function CompoundInterestPage() {
       </section>
 
       <RelatedCalculators current="/compound-interest" />
+
+      <RelatedGuides current="/compound-interest" />
 
       <section className="max-w-4xl mx-auto px-4 pb-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">

@@ -3,6 +3,7 @@ import Link from "next/link";
 import SalaryCalculator from "../components/SalaryCalculator";
 import { salaryScenarios } from "../lib/salary-engine";
 import RelatedCalculators from "../components/RelatedCalculators";
+import RelatedGuides from "../components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "Salary Calculator - Hourly to Annual, Weekly to Monthly | CashCalcs",
@@ -156,6 +157,8 @@ export default function SalaryCalculatorPage() {
       </section>
 
       <RelatedCalculators current="/salary-calculator" />
+
+      <RelatedGuides current="/salary-calculator" />
 
       <section className="max-w-4xl mx-auto px-4 pb-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">

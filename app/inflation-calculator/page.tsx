@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import InflationCalculator from "../components/InflationCalculator";
 import RelatedCalculators from "../components/RelatedCalculators";
+import RelatedGuides from "../components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "Inflation Calculator - How Much Will Your Money Be Worth? | CashCalcs",
@@ -101,6 +102,8 @@ export default function InflationPage() {
       </section>
 
       <RelatedCalculators current="/inflation-calculator" />
+
+      <RelatedGuides current="/inflation-calculator" />
 
       {/* FAQ */}
       <section className="max-w-4xl mx-auto px-4 pb-16">

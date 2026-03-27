@@ -3,6 +3,7 @@ import Link from "next/link";
 import NetWorthCalculator from "../components/NetWorthCalculator";
 import { networthScenarios } from "../lib/networth-engine";
 import RelatedCalculators from "../components/RelatedCalculators";
+import RelatedGuides from "../components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "Net Worth Calculator - Track Your Total Wealth | CashCalcs",
@@ -142,6 +143,8 @@ export default function NetWorthPage() {
       </section>
 
       <RelatedCalculators current="/net-worth" />
+
+      <RelatedGuides current="/net-worth" />
 
       <section className="max-w-4xl mx-auto px-4 pb-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">

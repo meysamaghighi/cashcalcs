@@ -3,6 +3,7 @@ import Link from "next/link";
 import TaxCalculator from "../components/TaxCalculator";
 import { taxScenarios } from "../lib/tax-engine";
 import RelatedCalculators from "../components/RelatedCalculators";
+import RelatedGuides from "../components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "Income Tax Calculator 2026 - Federal & State Tax Estimator | CashCalcs",
@@ -175,6 +176,8 @@ export default function TaxCalculatorPage() {
       </section>
 
       <RelatedCalculators current="/tax-calculator" />
+
+      <RelatedGuides current="/tax-calculator" />
 
       <section className="max-w-4xl mx-auto px-4 pb-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">

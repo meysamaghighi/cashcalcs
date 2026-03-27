@@ -3,6 +3,7 @@ import Link from "next/link";
 import BudgetCalculator from "../components/BudgetCalculator";
 import { budgetScenarios } from "../lib/budget-engine";
 import RelatedCalculators from "../components/RelatedCalculators";
+import RelatedGuides from "../components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "50/30/20 Budget Calculator - Free Monthly Budget Planner | CashCalcs",
@@ -163,6 +164,8 @@ export default function BudgetPage() {
       </section>
 
       <RelatedCalculators current="/budget" />
+
+      <RelatedGuides current="/budget" />
 
       <section className="max-w-4xl mx-auto px-4 pb-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">
