@@ -88,6 +88,13 @@ const guides = [
     category: "Economics",
     color: "bg-red-500",
   },
+  {
+    slug: "100k-salary-after-tax",
+    title: "$100K Salary After Taxes",
+    desc: "Complete breakdown of what a $100,000 salary looks like after federal and state taxes. Monthly take-home, state comparisons, and tips to maximize your paycheck.",
+    category: "Taxes & Income",
+    color: "bg-blue-600",
+  },
 ];
 
 export default function GuidesHub() {
