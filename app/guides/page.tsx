@@ -102,6 +102,27 @@ const guides = [
     category: "Investing",
     color: "bg-green-600",
   },
+  {
+    slug: "how-to-save-money",
+    title: "How to Save Money: 30 Proven Tips",
+    desc: "Practical money-saving strategies covering budgeting, cutting expenses, boosting income, and automating savings. No gimmicks, just proven tips that save $500-1,000/month.",
+    category: "Saving",
+    color: "bg-purple-500",
+  },
+  {
+    slug: "how-much-should-i-save",
+    title: "How Much Should I Save?",
+    desc: "Complete savings benchmarks by age and income. Emergency fund rules, retirement targets (1x salary at 30, 10x at 67), and where to prioritize your money.",
+    category: "Saving",
+    color: "bg-purple-600",
+  },
+  {
+    slug: "understanding-tax-brackets",
+    title: "Understanding Tax Brackets",
+    desc: "How marginal vs effective tax rates work, why a raise never hurts you, and complete 2026 federal bracket breakdown. Includes tax-lowering strategies.",
+    category: "Taxes & Income",
+    color: "bg-red-600",
+  },
 ];
 
 export default function GuidesHub() {
