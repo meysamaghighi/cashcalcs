@@ -8,6 +8,8 @@ import {
 import TaxCalculator from "../../components/TaxCalculator";
 import RelatedCalculators from "../../components/RelatedCalculators";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return taxScenarios.map((s) => ({ slug: s.slug }));
 }

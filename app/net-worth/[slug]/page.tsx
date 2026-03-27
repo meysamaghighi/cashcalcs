@@ -8,6 +8,8 @@ import {
 import NetWorthCalculator from "../../components/NetWorthCalculator";
 import RelatedCalculators from "../../components/RelatedCalculators";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return networthScenarios.map((s) => ({ slug: s.slug }));
 }

@@ -5,6 +5,8 @@ import InflationCalculator from "../../components/InflationCalculator";
 import { inflationPages, getInflationPage } from "../../lib/inflation-pages";
 import RelatedCalculators from "../../components/RelatedCalculators";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return inflationPages.map((p) => ({ slug: p.slug }));
 }

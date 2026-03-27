@@ -5,6 +5,8 @@ import RetirementCalculator from "../../components/RetirementCalculator";
 import { retirementScenarios, getRetirementScenario } from "../../lib/retirement-engine";
 import RelatedCalculators from "../../components/RelatedCalculators";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return retirementScenarios.map((s) => ({ slug: s.slug }));
 }

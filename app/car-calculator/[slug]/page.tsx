@@ -8,6 +8,8 @@ import {
 import CarCalculator from "../../components/CarCalculator";
 import RelatedCalculators from "../../components/RelatedCalculators";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return carScenarios.map((s) => ({ slug: s.slug }));
 }

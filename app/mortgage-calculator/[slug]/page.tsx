@@ -8,6 +8,8 @@ import {
 import MortgageCalculator from "../../components/MortgageCalculator";
 import RelatedCalculators from "../../components/RelatedCalculators";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return mortgageScenarios.map((s) => ({ slug: s.slug }));
 }

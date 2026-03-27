@@ -5,6 +5,8 @@ import { compoundScenarios, getScenarioBySlug } from "../../lib/compound-engine"
 import CompoundCalculator from "../../components/CompoundCalculator";
 import RelatedCalculators from "../../components/RelatedCalculators";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return compoundScenarios.map((s) => ({ slug: s.slug }));
 }

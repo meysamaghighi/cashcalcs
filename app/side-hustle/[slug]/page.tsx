@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import { sideHustles, getHustleBySlug, getHustlesByCategory } from "../../lib/side-hustles";
 import RelatedCalculators from "../../components/RelatedCalculators";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return sideHustles.map((h) => ({ slug: h.slug }));
 }

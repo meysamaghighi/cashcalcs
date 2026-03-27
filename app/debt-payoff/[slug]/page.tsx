@@ -5,6 +5,8 @@ import { debtTypes, getDebtTypeBySlug, formatCurrency } from "../../lib/debt-eng
 import DebtCalculator from "../../components/DebtCalculator";
 import RelatedCalculators from "../../components/RelatedCalculators";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return debtTypes.map((dt) => ({ slug: dt.slug }));
 }

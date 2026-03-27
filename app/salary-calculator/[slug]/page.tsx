@@ -8,6 +8,8 @@ import {
 import SalaryCalculator from "../../components/SalaryCalculator";
 import RelatedCalculators from "../../components/RelatedCalculators";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return salaryScenarios.map((s) => ({ slug: s.slug }));
 }

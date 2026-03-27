@@ -5,6 +5,8 @@ import SavingsCalculator from "../../components/SavingsCalculator";
 import { savingsGoals, getGoalBySlug, formatCurrency } from "../../lib/savings-engine";
 import RelatedCalculators from "../../components/RelatedCalculators";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return savingsGoals.map((g) => ({ slug: g.slug }));
 }

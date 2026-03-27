@@ -8,6 +8,8 @@ import {
 import SubscriptionCalculator from "../../components/SubscriptionCalculator";
 import RelatedCalculators from "../../components/RelatedCalculators";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return subscriptionPresets.map((p) => ({ slug: p.slug }));
 }

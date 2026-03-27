@@ -5,6 +5,8 @@ import InvestmentCalculator from "../../components/InvestmentCalculator";
 import { investmentScenarios, getInvestmentScenario } from "../../lib/investment-engine";
 import RelatedCalculators from "../../components/RelatedCalculators";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return investmentScenarios.map((s) => ({ slug: s.slug }));
 }

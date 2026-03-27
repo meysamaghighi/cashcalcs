@@ -5,6 +5,8 @@ import { budgetScenarios, getScenarioBySlug } from "../../lib/budget-engine";
 import BudgetCalculator from "../../components/BudgetCalculator";
 import RelatedCalculators from "../../components/RelatedCalculators";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return budgetScenarios.map((s) => ({ slug: s.slug }));
 }

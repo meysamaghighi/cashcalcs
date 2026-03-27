@@ -5,6 +5,8 @@ import { fireScenarios, getScenarioBySlug } from "../../lib/fire-engine";
 import FireCalculator from "../../components/FireCalculator";
 import RelatedCalculators from "../../components/RelatedCalculators";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return fireScenarios.map((s) => ({ slug: s.slug }));
 }

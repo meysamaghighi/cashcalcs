@@ -6,6 +6,8 @@ import RelatedCalculators from "../../../components/RelatedCalculators";
 
 const categorySlug = (cat: string) => cat.toLowerCase().replace(/\s+/g, "-");
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return getAllCategories().map((cat) => ({ name: categorySlug(cat) }));
 }
