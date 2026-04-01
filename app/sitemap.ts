@@ -43,6 +43,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/guides/how-to-create-a-budget`, lastModified: now, priority: 0.6 },
     { url: `${BASE}/guides/what-is-compound-interest`, lastModified: now, priority: 0.6 },
     { url: `${BASE}/guides/how-to-pay-off-credit-card-debt`, lastModified: now, priority: 0.6 },
+    { url: `${BASE}/guides/how-to-reduce-monthly-expenses`, lastModified: now, priority: 0.6 },
+    { url: `${BASE}/guides/retirement-planning-for-beginners`, lastModified: now, priority: 0.6 },
     { url: `${BASE}/budget`, lastModified: now, priority: 0.9 },
     { url: `${BASE}/loan-calculator`, lastModified: now, priority: 0.9 },
     { url: `${BASE}/salary-calculator`, lastModified: now, priority: 0.9 },

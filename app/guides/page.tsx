@@ -144,6 +144,20 @@ const guides = [
     category: "Debt Management",
     color: "bg-rose-500",
   },
+  {
+    slug: "how-to-reduce-monthly-expenses",
+    title: "How to Reduce Monthly Expenses",
+    desc: "Practical strategies to cut your monthly bills by $500+. Audit spending, negotiate bills, switch plans, and automate savings across housing, food, and subscriptions.",
+    category: "Saving",
+    color: "bg-teal-500",
+  },
+  {
+    slug: "retirement-planning-for-beginners",
+    title: "Retirement Planning for Beginners",
+    desc: "Start planning for retirement today. Understand 401(k)s, IRAs, the 4% rule, and how much to save by age. A complete beginner's guide to building retirement wealth.",
+    category: "Retirement",
+    color: "bg-indigo-600",
+  },
 ];
 
 export default function GuidesHub() {
