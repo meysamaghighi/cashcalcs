@@ -123,6 +123,27 @@ const guides = [
     category: "Taxes & Income",
     color: "bg-red-600",
   },
+  {
+    slug: "how-to-create-a-budget",
+    title: "How to Create a Budget",
+    desc: "Step-by-step guide to creating your first budget. Choose a method, track expenses, set categories, and build a system that actually works.",
+    category: "Budgeting",
+    color: "bg-amber-600",
+  },
+  {
+    slug: "what-is-compound-interest",
+    title: "What is Compound Interest?",
+    desc: "Understand the most powerful force in finance. How compound interest works, the Rule of 72, and why starting early can make you hundreds of thousands richer.",
+    category: "Investing",
+    color: "bg-emerald-600",
+  },
+  {
+    slug: "how-to-pay-off-credit-card-debt",
+    title: "How to Pay Off Credit Card Debt",
+    desc: "Escape high-interest credit card debt with proven strategies: avalanche method, balance transfers, debt consolidation, and negotiation tactics.",
+    category: "Debt Management",
+    color: "bg-rose-500",
+  },
 ];
 
 export default function GuidesHub() {
