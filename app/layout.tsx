@@ -260,6 +260,7 @@ gtag('config', 'G-VY7HQL60ZB');`}
                 <h3 className="font-bold text-gray-900 mb-2 text-sm">More</h3>
                 <ul className="space-y-1">
                   <li><Link href="/quiz" className="hover:text-gray-700">Financial Health Quiz</Link></li>
+                  <li><Link href="/about" className="hover:text-gray-700">About</Link></li>
                 </ul>
               </div>
             </div>
