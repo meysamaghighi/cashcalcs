@@ -158,6 +158,48 @@ const guides = [
     category: "Retirement",
     color: "bg-indigo-600",
   },
+  {
+    slug: "how-to-build-credit",
+    title: "How to Build Credit from Scratch",
+    desc: "Step-by-step guide to building credit with no history. Secured cards, credit builder loans, authorized user status, and responsible habits that reach 720+ scores in 6-12 months.",
+    category: "Debt Management",
+    color: "bg-cyan-500",
+  },
+  {
+    slug: "what-is-an-etf",
+    title: "What Is an ETF? A Beginner's Guide",
+    desc: "Understand exchange-traded funds, how they work, and why they are the simplest way to invest. Compare ETFs vs mutual funds vs stocks with real examples.",
+    category: "Investing",
+    color: "bg-teal-600",
+  },
+  {
+    slug: "how-to-negotiate-salary",
+    title: "How to Negotiate Your Salary",
+    desc: "Master salary negotiation with proven scripts, research strategies, and timing advice. Learn when to ask for 10-20% more and how to handle counteroffers.",
+    category: "Taxes & Income",
+    color: "bg-slate-600",
+  },
+  {
+    slug: "renting-vs-buying",
+    title: "Renting vs Buying a Home",
+    desc: "Complete cost comparison of renting vs buying with breakeven analysis, hidden expenses, and lifestyle factors. Includes 5-year scenarios and decision framework.",
+    category: "Home Buying",
+    color: "bg-orange-600",
+  },
+  {
+    slug: "how-to-start-a-side-hustle",
+    title: "How to Start a Side Hustle",
+    desc: "Find, validate, and grow a profitable side hustle to $500-2000/month. Includes 30+ side hustle ideas, customer acquisition strategies, and tax tips.",
+    category: "Wealth Building",
+    color: "bg-fuchsia-500",
+  },
+  {
+    slug: "what-is-dollar-cost-averaging",
+    title: "What Is Dollar-Cost Averaging?",
+    desc: "Learn the simplest investment strategy for beginners. Invest a fixed amount monthly, reduce timing risk, and build wealth on autopilot with real performance data.",
+    category: "Investing",
+    color: "bg-lime-600",
+  },
 ];
 
 export default function GuidesHub() {
