@@ -25,6 +25,9 @@ export const metadata: Metadata = {
       "Free side hustle calculator. Get personalized recommendations based on your hours and skills. 30+ side hustles with earnings.",
     type: "website",
   },
+  alternates: {
+    canonical: "/side-hustle",
+  },
 };
 
 export default function SideHustlePage() {

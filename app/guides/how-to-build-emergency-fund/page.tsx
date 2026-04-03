@@ -21,6 +21,9 @@ export const metadata: Metadata = {
       "Learn how to build an emergency fund from scratch. How much to save, where to keep it, and step-by-step tips to build 3-6 months of expenses.",
     type: "article",
   },
+  alternates: {
+    canonical: "/guides/how-to-build-emergency-fund",
+  },
 };
 
 export default function EmergencyFundGuide() {

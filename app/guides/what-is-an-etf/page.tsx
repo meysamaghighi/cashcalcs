@@ -21,6 +21,9 @@ export const metadata: Metadata = {
       "Learn what ETFs are, how they work, and why they are the most popular investment for beginners. Compare ETFs vs mutual funds vs stocks.",
     type: "article",
   },
+  alternates: {
+    canonical: "/guides/what-is-an-etf",
+  },
 };
 
 export default function WhatIsAnETF() {

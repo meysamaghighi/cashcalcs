@@ -19,7 +19,13 @@ export async function generateMetadata({
   const { slug } = await params;
   const dt = getDebtTypeBySlug(slug);
   if (!dt) return {};
-  return { title: `${dt.seoTitle} | CashCalcs`, description: dt.seoDescription };
+  return {
+    title: `${dt.seoTitle} | CashCalcs`,
+    description: dt.seoDescription,
+    alternates: {
+      canonical: `/debt-payoff/${slug}`,
+    },
+  };
 }
 
 export default async function DebtTypePage({

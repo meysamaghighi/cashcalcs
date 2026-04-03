@@ -21,6 +21,9 @@ export const metadata: Metadata = {
       "Learn how to start a profitable side hustle. Find your niche, validate ideas, and scale to $500-2000/month with proven strategies.",
     type: "article",
   },
+  alternates: {
+    canonical: "/guides/how-to-start-a-side-hustle",
+  },
 };
 
 export default function HowToStartSideHustle() {

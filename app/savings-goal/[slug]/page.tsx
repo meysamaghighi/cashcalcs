@@ -19,7 +19,13 @@ export async function generateMetadata({
   const { slug } = await params;
   const goal = getGoalBySlug(slug);
   if (!goal) return {};
-  return { title: `${goal.seoTitle} | CashCalcs`, description: goal.seoDescription };
+  return {
+    title: `${goal.seoTitle} | CashCalcs`,
+    description: goal.seoDescription,
+    alternates: {
+      canonical: `/savings-goal/${slug}`,
+    },
+  };
 }
 
 export default async function GoalPage({

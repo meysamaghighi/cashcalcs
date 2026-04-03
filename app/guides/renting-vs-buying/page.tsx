@@ -21,6 +21,9 @@ export const metadata: Metadata = {
       "Should you rent or buy a home? Compare total costs, hidden expenses, breakeven timelines, and lifestyle factors with real examples.",
     type: "article",
   },
+  alternates: {
+    canonical: "/guides/renting-vs-buying",
+  },
 };
 
 export default function RentingVsBuying() {

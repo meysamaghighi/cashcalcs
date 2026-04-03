@@ -20,6 +20,9 @@ export const metadata: Metadata = {
       "Strategies to pay off student loans faster: refinancing, extra payments, income-driven plans, forgiveness programs, and the math behind each option.",
     type: "article",
   },
+  alternates: {
+    canonical: "/guides/how-to-pay-off-student-loans",
+  },
 };
 
 export default function StudentLoanGuide() {

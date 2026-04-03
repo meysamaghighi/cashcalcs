@@ -21,6 +21,9 @@ export const metadata: Metadata = {
       "Learn how to negotiate your salary like a pro. Research market rates, build your case, and handle counteroffers with confidence.",
     type: "article",
   },
+  alternates: {
+    canonical: "/guides/how-to-negotiate-salary",
+  },
 };
 
 export default function HowToNegotiateSalary() {

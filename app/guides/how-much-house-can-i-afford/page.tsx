@@ -19,6 +19,9 @@ export const metadata: Metadata = {
       "Learn how much house you can afford based on your income, debts, and down payment. Includes the 28/36 rule, income requirements by home price, and tips to afford more.",
     type: "article",
   },
+  alternates: {
+    canonical: "/guides/how-much-house-can-i-afford",
+  },
 };
 
 export default function HowMuchHouseGuide() {

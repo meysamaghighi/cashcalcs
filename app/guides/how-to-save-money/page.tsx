@@ -21,6 +21,9 @@ export const metadata: Metadata = {
       "Learn how to save money fast with 30 practical tips covering budgeting, cutting expenses, boosting income, and automating savings.",
     type: "article",
   },
+  alternates: {
+    canonical: "/guides/how-to-save-money",
+  },
 };
 
 export default function HowToSaveMoney() {

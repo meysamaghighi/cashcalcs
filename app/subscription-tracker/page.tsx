@@ -23,6 +23,9 @@ export const metadata: Metadata = {
       "Free subscription tracker. Add all your subscriptions to see total monthly and yearly cost, category breakdown, and savings potential.",
     type: "website",
   },
+  alternates: {
+    canonical: "/subscription-tracker",
+  },
 };
 
 export default function SubscriptionTrackerPage() {

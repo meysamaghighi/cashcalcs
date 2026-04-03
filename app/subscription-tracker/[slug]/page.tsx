@@ -25,6 +25,9 @@ export async function generateMetadata({
   return {
     title: `${preset.seoTitle} | CashCalcs`,
     description: preset.seoDescription,
+    alternates: {
+      canonical: `/subscription-tracker/${slug}`,
+    },
   };
 }
 

@@ -19,6 +19,9 @@ export const metadata: Metadata = {
       "Complete breakdown of what a $100K salary looks like after federal and state taxes. Monthly take-home, state comparisons, and tips to maximize your paycheck.",
     type: "article",
   },
+  alternates: {
+    canonical: "/guides/100k-salary-after-tax",
+  },
 };
 
 export default function SalaryAfterTax100k() {

@@ -25,6 +25,9 @@ export const metadata: Metadata = {
       "Free mortgage calculator with monthly payment breakdown, amortization schedule, PMI, taxes, and insurance. See how much house you can afford.",
     type: "website",
   },
+  alternates: {
+    canonical: "/mortgage-calculator",
+  },
 };
 
 export default function MortgageCalculatorPage() {

@@ -25,6 +25,9 @@ export const metadata: Metadata = {
       "Free 50/30/20 budget calculator. Enter your income to see exactly how much to spend on needs, wants, and savings. Personalized budget breakdown with spending suggestions.",
     type: "website",
   },
+  alternates: {
+    canonical: "/budget",
+  },
 };
 
 export default function BudgetPage() {

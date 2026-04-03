@@ -21,6 +21,9 @@ export const metadata: Metadata = {
       "Understand compound interest: how it works, the Rule of 72, and why starting early can make you hundreds of thousands richer.",
     type: "article",
   },
+  alternates: {
+    canonical: "/guides/what-is-compound-interest",
+  },
 };
 
 export default function WhatIsCompoundInterest() {

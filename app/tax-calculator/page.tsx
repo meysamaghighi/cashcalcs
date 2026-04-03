@@ -25,6 +25,9 @@ export const metadata: Metadata = {
       "Free income tax calculator for 2026. Calculate federal and state taxes, see your effective vs marginal rate, and get a full bracket breakdown.",
     type: "website",
   },
+  alternates: {
+    canonical: "/tax-calculator",
+  },
 };
 
 export default function TaxCalculatorPage() {

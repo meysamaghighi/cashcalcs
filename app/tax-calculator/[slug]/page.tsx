@@ -25,6 +25,9 @@ export async function generateMetadata({
   return {
     title: `${scenario.seoTitle} | CashCalcs`,
     description: scenario.seoDescription,
+    alternates: {
+      canonical: `/tax-calculator/${slug}`,
+    },
   };
 }
 

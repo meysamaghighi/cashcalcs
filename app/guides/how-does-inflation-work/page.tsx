@@ -20,6 +20,9 @@ export const metadata: Metadata = {
       "Understand how inflation works, why prices rise, and how to protect your money. Learn about CPI, the Fed's role, and inflation-proof investment strategies.",
     type: "article",
   },
+  alternates: {
+    canonical: "/guides/how-does-inflation-work",
+  },
 };
 
 export default function InflationGuide() {

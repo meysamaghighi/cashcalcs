@@ -22,6 +22,9 @@ export const metadata: Metadata = {
       "Free financial guides covering debt payoff, emergency funds, FIRE, budgeting, mortgages, investing, and more. Expert advice with actionable steps.",
     type: "website",
   },
+  alternates: {
+    canonical: "/guides",
+  },
 };
 
 const guides = [

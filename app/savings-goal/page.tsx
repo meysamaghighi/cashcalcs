@@ -24,6 +24,9 @@ export const metadata: Metadata = {
       "Free savings goal calculator with compound interest. Plan for emergency fund, house, vacation, car, wedding, or retirement.",
     type: "website",
   },
+  alternates: {
+    canonical: "/savings-goal",
+  },
 };
 
 export default function SavingsGoalPage() {

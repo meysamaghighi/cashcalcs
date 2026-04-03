@@ -25,6 +25,9 @@ export const metadata: Metadata = {
       "Free loan calculator with monthly payment, total interest, and amortization schedule. Calculate auto loans, personal loans, student loans, and more.",
     type: "website",
   },
+  alternates: {
+    canonical: "/loan-calculator",
+  },
 };
 
 export default function LoanCalculatorPage() {

@@ -25,6 +25,9 @@ export const metadata: Metadata = {
       "Free FIRE calculator. Enter your income, expenses, and savings to find your financial independence date. Compare Lean FIRE, Coast FIRE, Fat FIRE, and Barista FIRE strategies.",
     type: "website",
   },
+  alternates: {
+    canonical: "/fire-calculator",
+  },
 };
 
 export default function FirePage() {

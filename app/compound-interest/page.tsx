@@ -25,6 +25,9 @@ export const metadata: Metadata = {
       "Free compound interest calculator. Enter your investment, monthly contributions, and interest rate to see how your money grows over time. Interactive charts and year-by-year breakdowns.",
     type: "website",
   },
+  alternates: {
+    canonical: "/compound-interest",
+  },
 };
 
 export default function CompoundInterestPage() {

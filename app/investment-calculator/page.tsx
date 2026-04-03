@@ -24,6 +24,9 @@ export const metadata: Metadata = {
       "Free investment returns calculator. See how your investments grow with compound returns. Compare scenarios, adjust for inflation, and plan your financial future.",
     type: "website",
   },
+  alternates: {
+    canonical: "/investment-calculator",
+  },
 };
 
 const faqData = [

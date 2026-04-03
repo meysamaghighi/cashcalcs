@@ -21,6 +21,9 @@ export const metadata: Metadata = {
       "Practical strategies to cut your monthly bills by $500+. Audit spending, negotiate bills, switch plans, and automate savings across housing, food, and subscriptions.",
     type: "article",
   },
+  alternates: {
+    canonical: "/guides/how-to-reduce-monthly-expenses",
+  },
 };
 
 export default function HowToReduceMonthlyExpenses() {

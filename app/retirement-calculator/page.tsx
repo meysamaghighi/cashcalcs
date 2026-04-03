@@ -24,6 +24,9 @@ export const metadata: Metadata = {
       "Free retirement calculator with Social Security and 4% rule. Calculate your retirement nest egg, monthly income, and if you're on track to retire comfortably.",
     type: "website",
   },
+  alternates: {
+    canonical: "/retirement-calculator",
+  },
 };
 
 export default function RetirementCalculatorPage() {

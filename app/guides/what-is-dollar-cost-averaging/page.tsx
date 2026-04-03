@@ -21,6 +21,9 @@ export const metadata: Metadata = {
       "Learn how dollar-cost averaging works, why it reduces risk, and when to use it. Includes real examples and performance comparisons.",
     type: "article",
   },
+  alternates: {
+    canonical: "/guides/what-is-dollar-cost-averaging",
+  },
 };
 
 export default function WhatIsDollarCostAveraging() {

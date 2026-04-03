@@ -21,6 +21,9 @@ export const metadata: Metadata = {
       "Learn how tax brackets work and why earning more never leaves you with less. Complete 2026 federal tax bracket guide.",
     type: "article",
   },
+  alternates: {
+    canonical: "/guides/understanding-tax-brackets",
+  },
 };
 
 export default function UnderstandingTaxBrackets() {

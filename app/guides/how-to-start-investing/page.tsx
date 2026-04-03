@@ -20,6 +20,9 @@ export const metadata: Metadata = {
       "Learn how to start investing from scratch. Covers brokerage accounts, index funds, asset allocation, and how much to invest. Simple, jargon-free guide for beginners.",
     type: "article",
   },
+  alternates: {
+    canonical: "/guides/how-to-start-investing",
+  },
 };
 
 export default function InvestingGuide() {

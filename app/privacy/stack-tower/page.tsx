@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy Policy - Stack Tower | CashCalcs",
   description: "Privacy policy for the Stack Tower mobile game by MeyDev.",
+  alternates: {
+    canonical: "/privacy/stack-tower",
+  },
 };
 
 export default function StackTowerPrivacy() {

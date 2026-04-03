@@ -20,6 +20,9 @@ export const metadata: Metadata = {
       "Learn about the FIRE movement (Financial Independence, Retire Early). Covers Lean FIRE, Fat FIRE, Coast FIRE, Barista FIRE, the 4% rule, and how to get started.",
     type: "article",
   },
+  alternates: {
+    canonical: "/guides/what-is-the-fire-movement",
+  },
 };
 
 export default function WhatIsFireGuide() {

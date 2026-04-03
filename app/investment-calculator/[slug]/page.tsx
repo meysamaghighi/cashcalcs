@@ -19,7 +19,13 @@ export async function generateMetadata({
   const { slug } = await params;
   const scenario = getInvestmentScenario(slug);
   if (!scenario) return {};
-  return { title: `${scenario.seoTitle} | CashCalcs`, description: scenario.seoDescription };
+  return {
+    title: `${scenario.seoTitle} | CashCalcs`,
+    description: scenario.seoDescription,
+    alternates: {
+      canonical: `/investment-calculator/${slug}`,
+    },
+  };
 }
 
 export default async function InvestmentSubPage({

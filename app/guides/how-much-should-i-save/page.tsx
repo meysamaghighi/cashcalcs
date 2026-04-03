@@ -21,6 +21,9 @@ export const metadata: Metadata = {
       "Complete guide to savings benchmarks by age, income level, and financial goals. Emergency fund, retirement, and wealth-building targets.",
     type: "article",
   },
+  alternates: {
+    canonical: "/guides/how-much-should-i-save",
+  },
 };
 
 export default function HowMuchShouldISave() {

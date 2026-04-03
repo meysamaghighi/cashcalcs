@@ -21,6 +21,9 @@ export const metadata: Metadata = {
       "Escape high-interest credit card debt with proven strategies: avalanche method, balance transfers, debt consolidation, and negotiation tactics.",
     type: "article",
   },
+  alternates: {
+    canonical: "/guides/how-to-pay-off-credit-card-debt",
+  },
 };
 
 export default function HowToPayOffCreditCardDebt() {

@@ -24,6 +24,9 @@ export const metadata: Metadata = {
       "Free car affordability calculator. Calculate your max car price, monthly payment, insurance, and gas based on your income. See what you can really afford.",
     type: "website",
   },
+  alternates: {
+    canonical: "/car-calculator",
+  },
 };
 
 export default function CarCalculatorPage() {

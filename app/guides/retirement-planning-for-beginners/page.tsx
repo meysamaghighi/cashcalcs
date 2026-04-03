@@ -21,6 +21,9 @@ export const metadata: Metadata = {
       "Start planning for retirement today. Understand 401(k)s, IRAs, the 4% rule, and how much to save by age. A complete beginner's guide to building retirement wealth.",
     type: "article",
   },
+  alternates: {
+    canonical: "/guides/retirement-planning-for-beginners",
+  },
 };
 
 export default function RetirementPlanningForBeginners() {

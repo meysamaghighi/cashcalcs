@@ -18,6 +18,9 @@ export const metadata: Metadata = {
       "Learn how to calculate your net worth in 5 simple steps. Includes what counts as assets vs liabilities, common mistakes, and benchmarks by age.",
     type: "article",
   },
+  alternates: {
+    canonical: "/guides/how-to-calculate-net-worth",
+  },
 };
 
 export default function HowToCalculateNetWorth() {

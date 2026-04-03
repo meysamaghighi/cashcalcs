@@ -22,6 +22,9 @@ export const metadata: Metadata = {
       "Free inflation calculator. See how inflation erodes your purchasing power over time and how much you'll need in the future to match today's value.",
     type: "website",
   },
+  alternates: {
+    canonical: "/inflation-calculator",
+  },
 };
 
 const faqData = [

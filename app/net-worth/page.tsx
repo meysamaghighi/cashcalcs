@@ -25,6 +25,9 @@ export const metadata: Metadata = {
       "Free net worth calculator. Add your assets and debts to see your total net worth, financial health score, and breakdown charts. Compare to benchmarks by age.",
     type: "website",
   },
+  alternates: {
+    canonical: "/net-worth",
+  },
 };
 
 export default function NetWorthPage() {

@@ -19,7 +19,13 @@ export async function generateMetadata({
   const { slug } = await params;
   const page = getInflationPage(slug);
   if (!page) return {};
-  return { title: `${page.seoTitle} | CashCalcs`, description: page.seoDescription };
+  return {
+    title: `${page.seoTitle} | CashCalcs`,
+    description: page.seoDescription,
+    alternates: {
+      canonical: `/inflation-calculator/${slug}`,
+    },
+  };
 }
 
 export default async function InflationSubPage({

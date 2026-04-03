@@ -19,7 +19,13 @@ export async function generateMetadata({
   const { slug } = await params;
   const scenario = getRetirementScenario(slug);
   if (!scenario) return {};
-  return { title: `${scenario.seoTitle} | CashCalcs`, description: scenario.seoDescription };
+  return {
+    title: `${scenario.seoTitle} | CashCalcs`,
+    description: scenario.seoDescription,
+    alternates: {
+      canonical: `/retirement-calculator/${slug}`,
+    },
+  };
 }
 
 export default async function ScenarioPage({

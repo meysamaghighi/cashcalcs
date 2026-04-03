@@ -25,6 +25,9 @@ export const metadata: Metadata = {
       "Free debt payoff calculator. Compare avalanche and snowball methods, see your debt-free date and interest savings.",
     type: "website",
   },
+  alternates: {
+    canonical: "/debt-payoff",
+  },
 };
 
 export default function DebtPayoffPage() {

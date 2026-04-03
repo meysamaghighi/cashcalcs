@@ -26,6 +26,9 @@ export const metadata: Metadata = {
       "Free salary calculator: convert between hourly, weekly, biweekly, monthly, and annual pay. See how much you make per hour, day, week, month, and year.",
     type: "website",
   },
+  alternates: {
+    canonical: "/salary-calculator",
+  },
 };
 
 export default function SalaryCalculatorPage() {

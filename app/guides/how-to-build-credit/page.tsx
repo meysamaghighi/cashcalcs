@@ -21,6 +21,9 @@ export const metadata: Metadata = {
       "Learn how to build credit from scratch with no credit history. Proven strategies including secured cards, credit builder loans, and responsible credit habits.",
     type: "article",
   },
+  alternates: {
+    canonical: "/guides/how-to-build-credit",
+  },
 };
 
 export default function HowToBuildCredit() {

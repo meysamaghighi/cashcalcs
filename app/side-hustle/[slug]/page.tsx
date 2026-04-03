@@ -21,6 +21,9 @@ export async function generateMetadata({
   return {
     title: `${hustle.name} Side Hustle - Earn $${hustle.hourlyLow}-$${hustle.hourlyHigh}/hr | CashCalcs`,
     description: `${hustle.name}: ${hustle.shortDesc}. Earn $${hustle.hourlyLow}-$${hustle.hourlyHigh}/hour. ${hustle.difficulty} difficulty, ${hustle.flexibility.toLowerCase()} flexibility.`,
+    alternates: {
+      canonical: `/side-hustle/${slug}`,
+    },
   };
 }
 

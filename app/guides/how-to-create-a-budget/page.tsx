@@ -21,6 +21,9 @@ export const metadata: Metadata = {
       "Learn how to create a personal budget from scratch. Step-by-step guide covering budget methods, tracking expenses, and building a system that works.",
     type: "article",
   },
+  alternates: {
+    canonical: "/guides/how-to-create-a-budget",
+  },
 };
 
 export default function HowToCreateABudget() {

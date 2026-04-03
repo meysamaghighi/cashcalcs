@@ -21,6 +21,9 @@ export const metadata: Metadata = {
       "Calculate how much your S&P 500 investment could grow over 10, 20, or 30 years. Based on historical average returns of 10% annually.",
     type: "article",
   },
+  alternates: {
+    canonical: "/guides/sp500-investment-calculator",
+  },
 };
 
 export default function SP500Guide() {

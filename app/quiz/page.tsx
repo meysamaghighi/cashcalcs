@@ -21,6 +21,9 @@ export const metadata: Metadata = {
       "Take our free 10-question financial health quiz. Get a personalized score across saving, budgeting, debt, investing, and protection with actionable recommendations.",
     type: "website",
   },
+  alternates: {
+    canonical: "/quiz",
+  },
 };
 
 export default function QuizPage() {

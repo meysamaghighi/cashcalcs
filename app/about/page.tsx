@@ -11,6 +11,9 @@ export const metadata: Metadata = {
       "16 free calculators and 19 guides covering all aspects of personal finance. No accounts, no tracking, no cost.",
     type: "website",
   },
+  alternates: {
+    canonical: "/about",
+  },
 };
 
 export default function AboutPage() {

@@ -20,6 +20,9 @@ export const metadata: Metadata = {
       "Learn the 50/30/20 budget rule with real examples. How to split your income into needs, wants, and savings. Includes budget breakdowns for every income level.",
     type: "article",
   },
+  alternates: {
+    canonical: "/guides/50-30-20-budget-rule",
+  },
 };
 
 export default function BudgetRuleGuide() {

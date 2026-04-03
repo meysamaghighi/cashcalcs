@@ -19,6 +19,9 @@ export const metadata: Metadata = {
       "Compare debt avalanche vs snowball methods. Learn which debt payoff strategy saves more money, which keeps you motivated, and which is right for you.",
     type: "article",
   },
+  alternates: {
+    canonical: "/guides/debt-avalanche-vs-snowball",
+  },
 };
 
 export default function DebtAvalancheVsSnowball() {
