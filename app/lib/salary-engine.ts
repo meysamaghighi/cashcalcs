@@ -70,7 +70,9 @@ export interface SalaryScenario {
   seoDescription: string;
 }
 
-export const salaryScenarios: SalaryScenario[] = [
+import { stateData } from "./state-tax-data";
+
+const baseSalaryScenarios: SalaryScenario[] = [
   {
     slug: "15-an-hour",
     name: "$15 an Hour",
@@ -159,6 +161,21 @@ export const salaryScenarios: SalaryScenario[] = [
     seoDescription:
       "Calculate your annual income working part-time at 20 hours per week. See monthly, weekly, and hourly pay breakdown.",
   },
+];
+
+const stateScenarios: SalaryScenario[] = stateData.map((state) => ({
+  slug: `salary-after-tax-${state.slug}`,
+  name: `Salary After Tax in ${state.name}`,
+  description: `Calculate your take-home pay in ${state.name} with ${state.incomeTaxNote}.`,
+  content: `${state.name} has ${state.hasIncomeTax ? `a state income tax with ${state.incomeTaxNote}` : state.incomeTaxNote}. When calculating your take-home pay in ${state.name}, you need to account for federal income tax (10%-37% depending on income), FICA taxes (7.65% for Social Security and Medicare)${state.hasIncomeTax ? `, and state income tax (${state.incomeTaxRate}% top rate)` : ''}.\n\nFor a $100,000 salary in ${state.name}, your monthly gross pay is $8,333. After federal taxes (around 24% effective rate for this income) and FICA (7.65%)${state.hasIncomeTax ? `, plus approximately ${state.incomeTaxRate}% state tax` : ''}, your monthly take-home pay is roughly $${Math.round(8333 * (1 - 0.24 - 0.0765 - (state.hasIncomeTax ? state.incomeTaxRate / 100 : 0))).toLocaleString()}-$${Math.round(8333 * (1 - 0.18 - 0.0765 - (state.hasIncomeTax ? state.incomeTaxRate / 100 : 0))).toLocaleString()}.\n\nUse the calculator below to see your exact take-home pay based on your salary, pay period, and hours worked. ${!state.hasIncomeTax ? `${state.name}'s lack of state income tax can significantly increase your take-home pay compared to high-tax states.` : state.incomeTaxRate >= 8 ? `${state.name}'s relatively high state tax rate means your take-home pay will be lower than in states with no or low income tax.` : `${state.name}'s moderate state tax rate is competitive with other states in the region.`}`,
+  defaults: { amount: 100000, period: "annual", hoursPerWeek: 40, weeksPerYear: 52 },
+  seoTitle: `$100K Salary After Tax in ${state.name} (2026) | Take-Home Pay Calculator`,
+  seoDescription: `Calculate your take-home pay in ${state.name}. ${state.hasIncomeTax ? `${state.name} has ${state.incomeTaxNote}.` : `${state.name} has no state income tax.`} Free salary after tax calculator with federal and state tax breakdown.`,
+}));
+
+export const salaryScenarios: SalaryScenario[] = [
+  ...baseSalaryScenarios,
+  ...stateScenarios,
 ];
 
 export function getScenarioBySlug(
