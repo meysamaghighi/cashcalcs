@@ -203,6 +203,27 @@ const guides = [
     category: "Investing",
     color: "bg-lime-600",
   },
+  {
+    slug: "how-to-build-wealth",
+    title: "How to Build Wealth in Your 20s and 30s",
+    desc: "Start building wealth early with compound interest, smart investing, and income growth strategies. Age-based milestones and actionable steps for your 20s and 30s.",
+    category: "Wealth Building",
+    color: "bg-orange-600",
+  },
+  {
+    slug: "understanding-mortgage-rates",
+    title: "Understanding Mortgage Rates",
+    desc: "How mortgage rates work, fixed vs adjustable, how 1% difference costs tens of thousands, and strategies to get the best rate on your home loan.",
+    category: "Home Buying",
+    color: "bg-sky-600",
+  },
+  {
+    slug: "debt-to-income-ratio",
+    title: "How to Calculate Your Debt-to-Income Ratio",
+    desc: "Step-by-step guide to calculating DTI ratio. What lenders look for, how it affects mortgage approval, and proven strategies to lower your ratio.",
+    category: "Debt Management",
+    color: "bg-rose-600",
+  },
 ];
 
 export default function GuidesHub() {

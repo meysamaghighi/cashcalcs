@@ -24,6 +24,9 @@ export async function generateMetadata({
   return {
     title: `Best ${category} Side Hustles in 2026 | CashCalcs`,
     description: `Explore ${hustles.length} ${category.toLowerCase()} side hustles. Compare earnings, difficulty, and flexibility.`,
+    alternates: {
+      canonical: `/side-hustle/category/${name}`,
+    },
   };
 }
 

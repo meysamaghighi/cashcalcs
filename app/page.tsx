@@ -27,6 +27,9 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "CashCalcs",
   },
+  alternates: {
+    canonical: "/",
+  },
 };
 
 const calculators = [
