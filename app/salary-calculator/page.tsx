@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import SalaryCalculator from "../components/SalaryCalculator";
 import { salaryScenarios } from "../lib/salary-engine";
-import { stateData } from "../lib/state-tax-data";
 import RelatedCalculators from "../components/RelatedCalculators";
 import RelatedGuides from "../components/RelatedGuides";
 
@@ -58,7 +57,7 @@ export default function SalaryCalculatorPage() {
           Common Salary Conversions
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-          {salaryScenarios.filter((s) => !s.slug.startsWith("salary-after-tax-")).map((s) => (
+          {salaryScenarios.map((s) => (
             <Link
               key={s.slug}
               href={`/salary-calculator/${s.slug}`}
@@ -157,27 +156,6 @@ export default function SalaryCalculatorPage() {
               instead of $52,000. This is common for contractors and freelancers.
             </p>
           </div>
-        </div>
-      </section>
-
-      <section className="max-w-4xl mx-auto px-4 pb-12">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">
-          Salary After Tax by State
-        </h2>
-        <p className="text-gray-600 mb-6">
-          Calculate your take-home pay in your state. State income tax rates range from 0% (9 states) to 13.3% (California), significantly impacting your net pay.
-        </p>
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-2">
-          {stateData.map((state) => (
-            <Link
-              key={state.slug}
-              href={`/salary-calculator/salary-after-tax-${state.slug}`}
-              className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow px-3 py-2 text-center"
-            >
-              <p className="font-bold text-gray-900 text-xs">{state.abbreviation}</p>
-              <p className="text-[10px] text-gray-500 mt-0.5">{state.name}</p>
-            </Link>
-          ))}
         </div>
       </section>
 
